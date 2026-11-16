@@ -90,4 +90,4 @@ jobs:
           done
           podman images --filter reference='localhost/soclab*' --format '{{.Repository}} {{.Size}}'
       - name: Ciclo de vida de un contenedor
-        run: uv run pytest -m podman -v
+        run: uv run pytest -m podman -v -p no:pytestqt
