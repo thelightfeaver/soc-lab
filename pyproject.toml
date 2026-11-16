@@ -1,6 +1,6 @@
 [project]
 name = "soclab"
-version = "0.1.0"
+version = "0.2.0"
 description = "Laboratorio SOC con 20 retos en contenedores Podman y una UI de escritorio en PySide6"
 readme = "README.md"
 license = "MIT"
