@@ -1,27 +1,60 @@
-# Hooks ejecutados con prek (compatible con pre-commit): `uv run prek install`
-default_install_hook_types: [pre-commit, commit-msg]
+# Hooks de calidad ejecutados con prek (compatible con pre-commit).
+# Instalar: `uv run prek install`  ·  Ejecutar todo: `uv run prek run --all-files`
+default_install_hook_types: [pre-commit, commit-msg, pre-push]
+default_stages: [pre-commit]
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:
       - id: trailing-whitespace
-        exclude: \.(log|eml|pcap|bin)$|builtin_challenges/
+        exclude: \.(log|eml|pcap|bin)$|builtin_challenges/|fonts/
       - id: end-of-file-fixer
-        exclude: \.(log|eml|pcap|bin)$|builtin_challenges/
+        exclude: \.(log|eml|pcap|bin)$|builtin_challenges/|fonts/
+      - id: mixed-line-ending
+        args: [--fix=lf]
+        exclude: builtin_challenges/|fonts/
       - id: check-toml
       - id: check-yaml
       - id: check-added-large-files
         args: [--maxkb=1024]
       - id: check-merge-conflict
+      - id: check-case-conflict
       - id: detect-private-key
+
+  # Calidad de código Python
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.17.5
     hooks:
       - id: ruff-check
         args: [--fix]
       - id: ruff-format
+
+  # Mensajes de commit Conventional Commits (base del versionado semántico)
   - repo: https://github.com/commitizen-tools/commitizen
     rev: v4.19.3
     hooks:
       - id: commitizen
         stages: [commit-msg]
+      - id: commitizen-branch
+        stages: [pre-push]
+
+  - repo: local
+    hooks:
+      - id: uv-lock
+        name: uv.lock sincronizado con pyproject.toml
+        entry: uv lock --check
+        language: system
+        pass_filenames: false
+        files: ^(pyproject\.toml|uv\.lock)$
+      - id: validate-challenges
+        name: validar manifiestos de retos
+        entry: uv run soclab validate src/soclab/builtin_challenges
+        language: system
+        pass_filenames: false
+        files: ^src/soclab/builtin_challenges/
+      - id: pytest
+        name: tests (pytest)
+        entry: uv run pytest -q
+        language: system
+        pass_filenames: false
+        stages: [pre-push]

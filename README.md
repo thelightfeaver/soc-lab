@@ -1,6 +1,7 @@
 # 🛡 SOC Lab
 
 [![CI](https://github.com/thelightfeaver/soc-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/thelightfeaver/soc-lab/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/thelightfeaver/soc-lab)](https://github.com/thelightfeaver/soc-lab/releases/latest)
 ![Python](https://img.shields.io/badge/python-3.14-blue)
 ![Podman](https://img.shields.io/badge/podman-rootless-892CA0)
 [![Conventional Commits](https://img.shields.io/badge/commits-conventional-fe5196)](https://www.conventionalcommits.org)
@@ -22,7 +23,13 @@ beaconing de C2, SQLi, eventos de Windows, persistencia en Linux, árboles de pr
 movimiento lateral, exfiltración, ransomware, XOR, JWT, PCAP, incidentes multietapa y
 manipulación de logs. Catálogo completo: [docs/retos.md](docs/retos.md).
 
-## Inicio rápido
+## Descargar
+
+Binarios listos para usar en [Releases](https://github.com/thelightfeaver/soc-lab/releases/latest):
+`soclab-X.Y.Z-linux-x86_64.tar.gz` y `soclab-X.Y.Z-windows-x86_64.zip`. Descomprime y
+ejecuta `soclab` (o `soclab.exe`). Solo necesitas instalar Podman aparte.
+
+## Inicio rápido (desde el código)
 
 Requisitos: [uv](https://docs.astral.sh/uv/), Python 3.14 y
 [Podman](https://podman.io/docs/installation) (en macOS/Windows: `podman machine init && podman machine start`).
@@ -52,13 +59,14 @@ resolverlo recibe un sello «Resuelto».
 | [docs/uso.md](docs/uso.md) | Guía de la interfaz, puntuación, pistas y contenedores |
 | [docs/arquitectura.md](docs/arquitectura.md) | Cómo funciona por dentro (capas, BD, seguridad) |
 | [docs/crear-retos.md](docs/crear-retos.md) | Formato `challenge.toml`, crear e importar tus retos |
-| [docs/desarrollo.md](docs/desarrollo.md) | Entorno de desarrollo, calidad, commits y CI |
+| [docs/desarrollo.md](docs/desarrollo.md) | Entorno de desarrollo, calidad y CI |
+| [docs/versionado.md](docs/versionado.md) | Versionado semántico, prek, commitizen y releases |
 | [docs/retos.md](docs/retos.md) | Catálogo de retos (sin spoilers) |
 
 ## Stack
 
 Python 3.14 · PySide6 · peewee + SQLite · Podman · ruff · prek · commitizen · pytest ·
-GitHub Actions (Linux, macOS y Windows).
+PyInstaller · GitHub Actions (Linux, macOS y Windows).
 
 ## Licencia
 

@@ -37,6 +37,9 @@ dev = [
     "pytest-qt>=4.5",
     "ruff>=0.14",
 ]
+release = [
+    "pyinstaller>=6.16",
+]
 
 [build-system]
 requires = ["uv_build>=0.9,<0.14"]
@@ -69,7 +72,7 @@ ignore = [
 
 [tool.ruff.lint.per-file-ignores]
 "tests/**" = ["S101", "S108", "S603", "S607", "PLR2004", "ANN", "SLF001", "FBT", "ARG", "PT018"]
-"scripts/**" = ["S311", "PLR2004", "PLR0915", "PLR0917", "PERF401", "T20", "E501"]
+"scripts/**" = ["S311", "S603", "PLR2004", "PLR0915", "PLR0917", "PERF401", "T20", "E501"]
 # Constructores de widgets Qt y overrides (rowCount, data...) son largos/camelCase por diseño.
 "src/soclab/ui/**" = ["N802", "PLR0915"]
 "src/soclab/manifest.py" = ["PLR0912", "PLR0915"]  # validador lineal: un bloque por campo
@@ -98,7 +101,13 @@ skip_covered = true
 # ---------------------------------------------------------------- commitizen
 [tool.commitizen]
 name = "cz_conventional_commits"
-version_provider = "pep621"
+# Fuente única de versión: pyproject.toml (+ uv.lock). `cz bump` también
+# actualiza __version__, crea el tag vX.Y.Z y regenera CHANGELOG.md.
+version_provider = "uv"
+version_scheme = "pep440"
+version_files = ["src/soclab/__init__.py:__version__"]
 tag_format = "v$version"
 update_changelog_on_bump = true
+changelog_incremental = true
 major_version_zero = true
+bump_message = "bump: version $current_version → $new_version"
