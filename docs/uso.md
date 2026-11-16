@@ -2,44 +2,53 @@
 
 ## Pantalla principal
 
+La interfaz imita un expediente de investigación: a la izquierda la carpeta de casos y a la
+derecha la hoja del caso abierto.
+
 ```
-┌──────────────── barra lateral ────────────────┬──────────── panel / detalle ────────────┐
-│ 🛡 SOC Lab        3/20 resueltos · 500 pts     │  Panel del analista                     │
-│ [Buscar reto… (Ctrl+F)               ]        │  ┌ Puntuación ┐ ┌ Retos completados ───┐ │
-│ [Dificultad ▾] [Estado ▾]                     │  │    500     │ │ ███████░░░░░  15%    │ │
-│ [Categoría ▾]                                 │  └────────────┘ └──────────────────────┘ │
-│ ✔ Fuerza bruta SSH       Logs   Fácil   100   │  Progreso por dificultad                │
-│ • Cabeceras de phishing  ...    Fácil   100   │  Siguiente reto sugerido  [Ir al reto]  │
-│ ...                                           │                                         │
-│ [📊 Panel]                 [⬆ Importar reto]  │                                         │
-└───────────────────────────────────────────────┴─────────────────────────────────────────┘
+┌──────── carpeta de casos ──────────┬───────────────── hoja del caso ─────────────────┐
+│ SOC Lab                            │  Caso 07                          ┌──────────┐  │
+│ 2 de 20 casos cerrados, 190 puntos │  Túnel DNS                        │ Resuelto │  │
+│ [Buscar caso, categoría o tema]    │  Medio   Red   200 puntos         └──────────┘  │
+│ [Dificultad ▾] [Estado ▾]          │  Reconstruye datos exfiltrados en DNS.          │
+│ [Categoría ▾]                      │  Escenario / Objetivo / Evidencias / Formato    │
+│ 01 Fuerza bruta SSH     [Cerrado]  │  ── Evidencias ───────────────────────────────  │
+│    Fácil  Análisis de logs         │  [Abrir carpeta] [Iniciar entorno] [Detener]    │
+│ 07 Túnel DNS              200 pts  │  podman exec -it soclab-07-dns-tunneling bash   │
+│    Medio  Red                      │  ── Pistas ───────────────────────────────────  │
+│ ...                                │  ── Conclusión ── SOC{...}______ [Cerrar caso]  │
+│ [Ver resumen]  [Importar caso]     │                                                 │
+└────────────────────────────────────┴─────────────────────────────────────────────────┘
 ```
 
-- **Panel** (`Ctrl+D`): puntuación, progreso total y por dificultad, y el siguiente reto
-  sugerido (el pendiente más fácil).
-- **Lista de retos**: ordenable por columna. `✔` = resuelto. Filtros combinables.
-- **Detalle** (al seleccionar un reto): escenario, objetivo, artefactos y formato de flag.
+- **Resumen** (`Ctrl+D`): casos cerrados, puntos, avance por dificultad y el siguiente caso
+  sugerido (el abierto más fácil).
+- **Carpeta de casos**: número de caso, título, dificultad (color) y categoría. Los casos
+  resueltos muestran «Cerrado»; el seleccionado se marca como una etiqueta de evidencia.
+- **Hoja del caso**: informe (escenario, objetivo, evidencias y formato de la flag),
+  entorno de análisis, pistas y conclusión. Al cerrarlo aparece el sello «Resuelto».
 
-## Resolver un reto
+## Resolver un caso
 
-1. **Iniciar contenedor**: la primera vez construye la imagen base (~60 MB, una sola vez)
-   y la capa del reto (KB). Después arranca en segundos.
-2. **Copiar** el comando y pegarlo en tu terminal:
+1. **Iniciar entorno de análisis**: la primera vez construye la imagen base (~75 MB, una
+   sola vez) y la capa del caso (KB). Después arranca en segundos.
+2. **Copiar comando** y pegarlo en tu terminal:
    ```bash
    podman exec -it soclab-01-ssh-bruteforce bash -l
    ```
    Herramientas disponibles: `bash grep awk jq python3 tcpdump xxd file less coreutils`.
    `/challenge` es de solo lectura; usa `/tmp` para tus archivos.
-3. **Enviar flag**: el campo valida el formato `SOC{...}` en vivo. `Enter` envía.
+3. **Conclusión**: el campo valida el formato `SOC{...}` mientras escribes. `Enter` o
+   **Cerrar caso** envía la flag.
 
 | Resultado | Significado |
 |---|---|
-| ✅ Correcto | Reto resuelto, se suman los puntos |
-| ❌ Incorrecta | Se registra el intento (no el valor) |
-| ⚠ Formato inválido | No cuenta como intento |
-| ⏳ Espera | Tras un fallo hay 2 s de enfriamiento (anti fuerza bruta) |
+| Correcto. Caso cerrado | Se suman los puntos y aparece el sello |
+| Flag incorrecta | Se registra el intento (no el valor) |
+| Formato inválido | No cuenta como intento |
+| Espera dos segundos | Enfriamiento tras un fallo (anti fuerza bruta) |
 
-Las flags **no distinguen mayúsculas/minúsculas** salvo que el reto indique lo contrario,
+Las flags **no distinguen mayúsculas/minúsculas** salvo que el caso indique lo contrario,
 y se ignoran espacios al inicio y al final.
 
 ## Pistas y puntuación
@@ -67,8 +76,8 @@ Menú **Laboratorio → Reconstruir imagen base** fuerza un rebuild (p. ej. tras
 
 | Acción | Atajo |
 |---|---|
-| Importar reto ZIP / carpeta | `Ctrl+I` / `Ctrl+Shift+I` |
-| Panel | `Ctrl+D` |
+| Importar caso ZIP / carpeta | `Ctrl+I` / `Ctrl+Shift+I` |
+| Resumen | `Ctrl+D` |
 | Buscar | `Ctrl+F` |
 | Documentación | `F1` |
 | Reiniciar progreso | Menú Laboratorio |
@@ -81,5 +90,5 @@ Menú **Laboratorio → Reconstruir imagen base** fuerza un rebuild (p. ej. tras
 | macOS | `~/Library/Application Support/soclab/` |
 | Windows | `%APPDATA%\soclab\` |
 
-Contiene `soclab.db` (progreso) y `challenges/` (retos importados). La variable
+Contiene `soclab.db` (progreso) y `challenges/` (casos importados). La variable
 `SOCLAB_HOME` cambia esta ruta.

@@ -18,9 +18,9 @@ El resolver interno muestra consultas TXT con subdominios largos y aleatorios ha
 
 Reconstruye la información exfiltrada. La flag está dentro de los datos.
 
-## Artefactos
+## Evidencias
 
-Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+En el entorno de análisis, dentro de `/challenge`, o con el botón *Abrir carpeta de evidencias*:
 
 - `dns.log`
 

@@ -18,9 +18,9 @@ La cuenta de servicio `adm_backup` fue comprometida desde la estación de `lgarc
 
 Reconstruye la ruta completa del atacante, desde el equipo inicial hasta el último equipo alcanzado, en orden cronológico.
 
-## Artefactos
+## Evidencias
 
-Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+En el entorno de análisis, dentro de `/challenge`, o con el botón *Abrir carpeta de evidencias*:
 
 - `logons.jsonl`
 - `activos.csv`

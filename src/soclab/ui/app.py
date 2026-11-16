@@ -11,7 +11,7 @@ from soclab.db import init_database
 from soclab.podman import PodmanClient
 from soclab.services import LabService
 from soclab.ui.main_window import MainWindow
-from soclab.ui.theme import STYLESHEET
+from soclab.ui.theme import STYLESHEET, load_fonts
 
 
 def build_window() -> MainWindow:
@@ -35,6 +35,7 @@ def run() -> int:
     app.setApplicationVersion(__version__)
     app.setOrganizationName("soclab")
     app.setStyle("Fusion")
+    load_fonts()
     app.setStyleSheet(STYLESHEET)
     app.setWindowIcon(QIcon.fromTheme("security-high"))
     window = build_window()

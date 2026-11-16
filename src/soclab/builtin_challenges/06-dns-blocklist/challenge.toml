@@ -18,9 +18,9 @@ Threat Intel actualizó la blocklist de dominios. Necesitamos saber si algún eq
 
 Encuentra la IP interna que consultó un dominio presente en la blocklist (recuerda que la lista bloquea también los subdominios).
 
-## Artefactos
+## Evidencias
 
-Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+En el entorno de análisis, dentro de `/challenge`, o con el botón *Abrir carpeta de evidencias*:
 
 - `dns.log`
 - `blocklist.txt`

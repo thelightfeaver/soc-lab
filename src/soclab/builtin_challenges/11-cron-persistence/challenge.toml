@@ -18,9 +18,9 @@ El servidor `web01` vuelve a infectarse aunque se limpie el malware. Se tomó un
 
 Encuentra la tarea programada maliciosa y determina el servidor (IP:puerto) desde el que descarga su payload.
 
-## Artefactos
+## Evidencias
 
-Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+En el entorno de análisis, dentro de `/challenge`, o con el botón *Abrir carpeta de evidencias*:
 
 - `rootfs/ (copia del sistema de archivos)`
 - `LEEME.txt`

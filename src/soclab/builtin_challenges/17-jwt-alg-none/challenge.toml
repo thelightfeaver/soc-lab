@@ -18,9 +18,9 @@ La API registró una exportación masiva de datos desde `/api/admin/export`. El 
 
 Identifica la identidad (`sub`) con la que el atacante logró exportar los datos usando un token sin firma.
 
-## Artefactos
+## Evidencias
 
-Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+En el entorno de análisis, dentro de `/challenge`, o con el botón *Abrir carpeta de evidencias*:
 
 - `api_access.log`
 

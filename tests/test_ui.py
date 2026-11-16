@@ -45,7 +45,7 @@ def window(qtbot, service: LabService, tmp_path: Path):
 def test_lists_all_challenges(window: MainWindow) -> None:
     assert window.proxy.rowCount() == 20
     assert window.stack.currentWidget() is window.dashboard
-    assert "0/20" in window.progress_label.text()
+    assert "0 de 20" in window.progress_label.text()
 
 
 def test_filters(window: MainWindow) -> None:
@@ -60,7 +60,7 @@ def test_filters(window: MainWindow) -> None:
 
 
 def test_select_and_submit_flow(qtbot, window: MainWindow, clock: FakeClock) -> None:
-    window.table.selectRow(0)
+    window.case_list.setCurrentIndex(window.proxy.index(0, 0))
     assert window.stack.currentWidget() is window.detail
     slug = window.detail.slug
     assert slug == "01-ssh-bruteforce"
@@ -76,8 +76,9 @@ def test_select_and_submit_flow(qtbot, window: MainWindow, clock: FakeClock) -> 
     window.detail.submit_btn.click()
     assert "Correcto" in window.detail.feedback.text()
     assert not window.detail.flag_input.isEnabled()
-    assert "1/20" in window.progress_label.text()
-    assert window.dashboard.score.text() == "100"
+    assert "1 de 20" in window.progress_label.text()
+    assert "100 de 4800" in window.dashboard.lede.text()
+    assert window.detail.stamp.isVisibleTo(window.detail)
 
 
 def test_hint_reveal_updates_detail(window: MainWindow) -> None:

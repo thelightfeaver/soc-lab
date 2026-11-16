@@ -18,9 +18,9 @@ Recibimos un feed de IOCs de un CERT aliado. El inventario de binarios de una es
 
 Encuentra el binario del inventario cuyo hash aparece en el feed.
 
-## Artefactos
+## Evidencias
 
-Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+En el entorno de análisis, dentro de `/challenge`, o con el botón *Abrir carpeta de evidencias*:
 
 - `inventario_binarios.csv`
 - `feed_iocs.csv`

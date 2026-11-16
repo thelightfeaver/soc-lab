@@ -18,9 +18,9 @@ El DLP alertó de una subida de datos sensibles a un servicio de intercambio de 
 
 Reensambla la petición HTTP de subida, extrae el archivo enviado y encuentra la marca de agua DLP que contiene. Ojo con los segmentos desordenados y retransmitidos.
 
-## Artefactos
+## Evidencias
 
-Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+En el entorno de análisis, dentro de `/challenge`, o con el botón *Abrir carpeta de evidencias*:
 
 - `captura.pcap`
 - `notas.txt`

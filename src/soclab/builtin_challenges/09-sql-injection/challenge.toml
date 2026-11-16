@@ -18,9 +18,9 @@ La tienda online reportó lentitud y respuestas inusualmente grandes en `/produc
 
 Determina el nombre de la tabla de negocio cuyos datos se llevó el atacante.
 
-## Artefactos
+## Evidencias
 
-Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+En el entorno de análisis, dentro de `/challenge`, o con el botón *Abrir carpeta de evidencias*:
 
 - `access.log`
 

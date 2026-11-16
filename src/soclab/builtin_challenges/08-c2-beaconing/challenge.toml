@@ -18,9 +18,9 @@ El firewall perimetral exportó tres horas de conexiones salientes. Un implante 
 
 Encuentra el destino (IP:puerto) del beaconing.
 
-## Artefactos
+## Evidencias
 
-Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+En el entorno de análisis, dentro de `/challenge`, o con el botón *Abrir carpeta de evidencias*:
 
 - `conexiones.csv`
 

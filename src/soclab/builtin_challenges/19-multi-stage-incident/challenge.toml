@@ -18,9 +18,9 @@ RRHH recibió una 'factura' con un adjunto HTA. Alguien lo abrió. Tienes el cor
 
 Determina el **hostname** del equipo que descargó con éxito la segunda etapa del ataque.
 
-## Artefactos
+## Evidencias
 
-Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+En el entorno de análisis, dentro de `/challenge`, o con el botón *Abrir carpeta de evidencias*:
 
 - `correo_factura.eml`
 - `proxy.log`

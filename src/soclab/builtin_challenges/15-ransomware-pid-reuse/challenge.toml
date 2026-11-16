@@ -18,9 +18,9 @@ La estación de `mrojas` amaneció con archivos `.locked` y una nota de rescate.
 
 Identifica el nombre del ejecutable que cifró los archivos. Cuidado: Windows reutiliza los PID.
 
-## Artefactos
+## Evidencias
 
-Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+En el entorno de análisis, dentro de `/challenge`, o con el botón *Abrir carpeta de evidencias*:
 
 - `file_events.jsonl`
 - `process_events.jsonl`

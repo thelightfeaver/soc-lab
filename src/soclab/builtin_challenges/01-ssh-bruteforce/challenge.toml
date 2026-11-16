@@ -18,9 +18,9 @@ El bastión SSH `bastion01` recibió miles de intentos de autenticación durante
 
 Encuentra la IP que, tras múltiples fallos, logró autenticarse con éxito.
 
-## Artefactos
+## Evidencias
 
-Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+En el entorno de análisis, dentro de `/challenge`, o con el botón *Abrir carpeta de evidencias*:
 
 - `auth.log`
 

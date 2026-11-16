@@ -18,9 +18,9 @@ Sysmon (evento 1) registró un PowerShell oculto descargando código desde Inter
 
 Sigue la cadena de procesos padre e identifica el nombre del documento de Office que originó la ejecución.
 
-## Artefactos
+## Evidencias
 
-Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+En el entorno de análisis, dentro de `/challenge`, o con el botón *Abrir carpeta de evidencias*:
 
 - `sysmon_process_create.jsonl`
 

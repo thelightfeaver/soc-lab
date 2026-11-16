@@ -14,7 +14,7 @@ from PySide6.QtGui import QColor, QFont
 
 from soclab.manifest import Difficulty
 from soclab.services import ChallengeView
-from soclab.ui.theme import DIFFICULTY_COLORS, MUTED, SUCCESS
+from soclab.ui.theme import DIFFICULTY_COLORS, INK_SOFT, SUCCESS
 
 type Index = QModelIndex | QPersistentModelIndex
 
@@ -70,7 +70,7 @@ class ChallengeTableModel(QAbstractTableModel):
                 )[col]
             case Qt.ItemDataRole.ForegroundRole:
                 if col == 0:
-                    return QColor(SUCCESS if view.solved else MUTED)
+                    return QColor(SUCCESS if view.solved else INK_SOFT)
                 if col == 3:  # noqa: PLR2004
                     return QColor(DIFFICULTY_COLORS[view.difficulty])
                 return None

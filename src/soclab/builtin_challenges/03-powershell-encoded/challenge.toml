@@ -18,9 +18,9 @@ El EDR exportó eventos de creación de procesos (4688) de varias estaciones. Un
 
 Decodifica el comando malicioso y encuentra el dominio desde el que se descarga la siguiente etapa.
 
-## Artefactos
+## Evidencias
 
-Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+En el entorno de análisis, dentro de `/challenge`, o con el botón *Abrir carpeta de evidencias*:
 
 - `process_events.jsonl`
 

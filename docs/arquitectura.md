@@ -15,11 +15,13 @@ src/soclab/
 └── ui/                    # PySide6
     ├── app.py             # arranque, tema, carga de retos
     ├── main_window.py     # controlador: une servicio, Podman y widgets
-    ├── models.py          # QAbstractTableModel + proxy de filtros
-    ├── dashboard.py       # panel de progreso
-    ├── detail.py          # detalle del reto
+    ├── models.py          # modelo Qt + proxy de filtros
+    ├── widgets.py         # sello «Resuelto» y delegate de fila de caso
+    ├── dashboard.py       # resumen del expediente
+    ├── detail.py          # hoja del caso
     ├── workers.py         # QThreadPool para tareas bloqueantes
-    └── theme.py           # paleta y QSS
+    ├── theme.py           # tema expediente forense (paleta, QSS, carga de fuentes)
+    └── fonts/             # IBM Plex Sans/Mono y Source Serif 4 (OFL)
 ```
 
 ## Capas
@@ -92,3 +94,18 @@ los importados **sin tocar el progreso**.
 versionado, y `tests/solvers.py` contiene una **solución independiente por reto** que
 deriva la flag desde los artefactos y la verifica contra el `flag_hash`. Así CI garantiza
 que todos los retos son resolubles.
+
+## Diseño visual: expediente forense
+
+| Token | Valor | Uso |
+|---|---|---|
+| Papel | `#E9EDF1` | Fondo (carpeta) |
+| Hoja | `#FFFFFF` | Informe del caso |
+| Tinta | `#1F2A37` | Texto |
+| Azul archivo | `#1F3A5F` | Acción principal (una por vista) |
+| Rojo sello | `#B3261E` | Casos resueltos |
+| Etiqueta de evidencia | `#FFF6D6` | Caso seleccionado |
+
+Tipografía: Source Serif 4 para títulos e informes (voz de expediente), IBM Plex Sans para
+la interfaz e IBM Plex Mono solo para comandos y flags. Las fuentes viajan con el paquete
+(`ui/fonts`, licencia OFL) para verse igual en macOS, Linux y Windows.

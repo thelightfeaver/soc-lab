@@ -18,9 +18,9 @@ El servidor web corporativo registró un pico de errores 404 por la tarde. Parec
 
 Identifica la ruta exacta que el escáner descubrió (respondió 200) y que luego fue atacada con peticiones POST.
 
-## Artefactos
+## Evidencias
 
-Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+En el entorno de análisis, dentro de `/challenge`, o con el botón *Abrir carpeta de evidencias*:
 
 - `access.log`
 

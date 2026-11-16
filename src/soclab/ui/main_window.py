@@ -10,15 +10,14 @@ from PySide6.QtWidgets import (
     QFileDialog,
     QFrame,
     QHBoxLayout,
-    QHeaderView,
     QLabel,
     QLineEdit,
+    QListView,
     QMainWindow,
     QMessageBox,
     QPushButton,
     QSplitter,
     QStackedWidget,
-    QTableView,
     QVBoxLayout,
     QWidget,
 )
@@ -32,6 +31,7 @@ from soclab.services import ChallengeView, LabService, SubmitResult
 from soclab.ui.dashboard import DashboardWidget
 from soclab.ui.detail import ChallengeDetailWidget
 from soclab.ui.models import VIEW_ROLE, ChallengeFilterProxy, ChallengeTableModel
+from soclab.ui.widgets import CaseDelegate
 from soclab.ui.workers import TaskRunner
 
 DOCS_URL = "https://github.com/thelightfeaver/soc-lab/tree/main/docs"
@@ -82,24 +82,25 @@ class MainWindow(QMainWindow):
         side = QVBoxLayout(sidebar)
         side.setContentsMargins(14, 16, 14, 14)
         side.setSpacing(10)
-        brand = QLabel("🛡  SOC Lab")
-        brand.setObjectName("h1")
+        brand = QLabel("SOC Lab")
+        brand.setObjectName("brand")
         self.progress_label = QLabel()
         self.progress_label.setObjectName("muted")
         side.addWidget(brand)
         side.addWidget(self.progress_label)
 
         self.search = QLineEdit()
-        self.search.setPlaceholderText("Buscar reto…  (Ctrl+F)")
+        self.search.setPlaceholderText("Buscar caso, categoría o tema")
         self.search.setClearButtonEnabled(True)
-        self.search.setAccessibleName("Buscar reto")
+        self.search.setAccessibleName("Buscar caso")
+        self.search.setToolTip("Ctrl+F")
         self.difficulty_filter = QComboBox()
         self.difficulty_filter.addItem("Todas las dificultades", None)
         for d in Difficulty:
             self.difficulty_filter.addItem(d.label, d.value)
         self.category_filter = QComboBox()
         self.status_filter = QComboBox()
-        for text, key in (("Todos", "all"), ("Pendientes", "pending"), ("Resueltos", "solved")):
+        for text, key in (("Todos", "all"), ("Abiertos", "pending"), ("Cerrados", "solved")):
             self.status_filter.addItem(text, key)
         for combo, name in (
             (self.difficulty_filter, "Filtrar por dificultad"),
@@ -116,31 +117,23 @@ class MainWindow(QMainWindow):
         side.addLayout(row)
         side.addWidget(self.category_filter)
 
-        self.table = QTableView()
-        self.table.setModel(self.proxy)
-        self.table.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
-        self.table.setSelectionMode(QAbstractItemView.SelectionMode.SingleSelection)
-        self.table.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
-        self.table.setAlternatingRowColors(True)
-        self.table.setShowGrid(False)
-        self.table.setSortingEnabled(True)
-        self.table.sortByColumn(3, Qt.SortOrder.AscendingOrder)
-        self.table.verticalHeader().hide()
-        self.table.setAccessibleName("Lista de retos")
-        header = self.table.horizontalHeader()
-        header.setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)
-        for col in (0, 3, 4):
-            header.setSectionResizeMode(col, QHeaderView.ResizeMode.ResizeToContents)
-        header.setSectionResizeMode(2, QHeaderView.ResizeMode.Interactive)
-        header.resizeSection(2, 120)
-        self.table.selectionModel().selectionChanged.connect(self._on_selection)
-        side.addWidget(self.table, 1)
+        self.case_list = QListView()
+        self.case_list.setObjectName("cases")
+        self.case_list.setModel(self.proxy)
+        self.case_list.setItemDelegate(CaseDelegate(self.case_list))
+        self.case_list.setSelectionMode(QAbstractItemView.SelectionMode.SingleSelection)
+        self.case_list.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
+        self.case_list.setMouseTracking(True)
+        self.case_list.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+        self.case_list.setUniformItemSizes(True)
+        self.case_list.setAccessibleName("Lista de casos")
+        self.case_list.selectionModel().selectionChanged.connect(self._on_selection)
+        side.addWidget(self.case_list, 1)
 
         buttons = QHBoxLayout()
-        dash_btn = QPushButton("📊  Panel")
+        dash_btn = QPushButton("Ver resumen")
         dash_btn.clicked.connect(self.show_dashboard)
-        import_btn = QPushButton("⬆  Importar reto")
-        import_btn.setObjectName("primary")
+        import_btn = QPushButton("Importar caso")
         import_btn.clicked.connect(self.import_zip)
         buttons.addWidget(dash_btn)
         buttons.addWidget(import_btn)
@@ -161,7 +154,7 @@ class MainWindow(QMainWindow):
 
         splitter.addWidget(sidebar)
         splitter.addWidget(self.stack)
-        splitter.setSizes([560, 800])
+        splitter.setSizes([400, 960])
         splitter.setChildrenCollapsible(False)
 
         self.podman_label = QLabel("Podman: comprobando…")
@@ -170,14 +163,14 @@ class MainWindow(QMainWindow):
     def _build_menu(self) -> None:
         bar = self.menuBar()
         file_menu = bar.addMenu("&Archivo")
-        self._action(file_menu, "Importar reto (ZIP)…", self.import_zip, "Ctrl+I")
-        self._action(file_menu, "Importar reto (carpeta)…", self.import_folder, "Ctrl+Shift+I")
+        self._action(file_menu, "Importar caso (ZIP)…", self.import_zip, "Ctrl+I")
+        self._action(file_menu, "Importar caso (carpeta)…", self.import_folder, "Ctrl+Shift+I")
         file_menu.addSeparator()
         self._action(file_menu, "Salir", self.close, QKeySequence.StandardKey.Quit)
 
         lab = bar.addMenu("&Laboratorio")
-        self._action(lab, "Panel", self.show_dashboard, "Ctrl+D")
-        self._action(lab, "Buscar reto", self.focus_search, QKeySequence.StandardKey.Find)
+        self._action(lab, "Resumen", self.show_dashboard, "Ctrl+D")
+        self._action(lab, "Buscar caso", self.focus_search, QKeySequence.StandardKey.Find)
         self._action(lab, "Comprobar Podman", self.check_podman)
         self._action(lab, "Reconstruir imagen base", self.rebuild_base)
         lab.addSeparator()
@@ -213,7 +206,7 @@ class MainWindow(QMainWindow):
         self._apply_filters()
         stats = self.service.stats()
         self.progress_label.setText(
-            f"{stats.solved}/{stats.total} resueltos · {stats.points_earned} pts"
+            f"{stats.solved} de {stats.total} casos cerrados, {stats.points_earned} puntos"
         )
         self.dashboard.update_stats(stats, views)
         if selected:
@@ -233,9 +226,9 @@ class MainWindow(QMainWindow):
             return
         index = self.proxy.mapFromSource(self.model.index(row, 0))
         if index.isValid():
-            with QSignalBlocker(self.table.selectionModel()):
-                self.table.selectRow(index.row())
-            self.table.scrollTo(index)
+            with QSignalBlocker(self.case_list.selectionModel()):
+                self.case_list.setCurrentIndex(index)
+            self.case_list.scrollTo(index)
 
     def _on_selection(self, selected: QItemSelection, _deselected: QItemSelection) -> None:
         indexes = selected.indexes()
@@ -249,7 +242,7 @@ class MainWindow(QMainWindow):
 
     # ================================================================ navegación
     def show_dashboard(self) -> None:
-        self.table.clearSelection()
+        self.case_list.clearSelection()
         self.stack.setCurrentWidget(self.dashboard)
 
     def focus_search(self) -> None:
@@ -315,7 +308,7 @@ class MainWindow(QMainWindow):
         if container is None:
             return
         self.detail.set_container_state(
-            "construyendo/iniciando… (la 1ª vez tarda)", running=None, busy=True
+            "preparando… la primera vez construye la imagen", running=None, busy=True
         )
         self.statusBar().showMessage(f"Iniciando {container.name}…")
 
@@ -372,13 +365,13 @@ class MainWindow(QMainWindow):
         if result is SubmitResult.CORRECT:
             self.refresh()
             self.statusBar().showMessage(
-                f"¡{view.title} resuelto! +{view.awarded_points} pts", 8_000
+                f"Caso cerrado: {view.title} (+{view.awarded_points} pts)", 8_000
             )
 
     def delete_challenge(self, slug: str) -> None:
         view = self.service.get(slug)
         if self.confirm and not self._ask(
-            "Eliminar reto",
+            "Eliminar caso",
             f"¿Eliminar «{view.title}» y su progreso? Esta acción no se puede deshacer.",
         ):
             return
@@ -392,7 +385,7 @@ class MainWindow(QMainWindow):
     def reset_progress(self) -> None:
         if self.confirm and not self._ask(
             "Reiniciar progreso",
-            "Se borrarán todas las flags resueltas, intentos y pistas reveladas. ¿Continuar?",
+            "Se borrarán los casos cerrados, los intentos y las pistas vistas. ¿Continuar?",
         ):
             return
         self.service.reset_progress()
@@ -403,12 +396,12 @@ class MainWindow(QMainWindow):
 
     # ================================================================ importación
     def import_zip(self) -> None:
-        path, _ = QFileDialog.getOpenFileName(self, "Importar reto", "", "Reto SOC Lab (*.zip)")
+        path, _ = QFileDialog.getOpenFileName(self, "Importar caso", "", "Caso SOC Lab (*.zip)")
         if path:
             self.import_path(Path(path))
 
     def import_folder(self) -> None:
-        path = QFileDialog.getExistingDirectory(self, "Importar carpeta de reto")
+        path = QFileDialog.getExistingDirectory(self, "Importar carpeta de caso")
         if path:
             self.import_path(Path(path))
 
@@ -417,9 +410,9 @@ class MainWindow(QMainWindow):
             self.confirm
             and not replace
             and not self._ask(
-                "Importar reto",
-                "Los retos importados construyen una imagen a partir de su Containerfile. "
-                "Importa solo retos de fuentes de confianza.\n\n¿Continuar?",
+                "Importar caso",
+                "Los casos importados construyen una imagen a partir de su Containerfile. "
+                "Importa solo casos de fuentes de confianza.\n\n¿Continuar?",
             )
         ):
             return None
@@ -432,7 +425,7 @@ class MainWindow(QMainWindow):
             if (
                 "ya existe" in str(exc)
                 and self.confirm
-                and self._ask("Reto existente", f"{exc}.\n¿Reemplazarlo? (se conserva el progreso)")
+                and self._ask("Caso existente", f"{exc}.\n¿Reemplazarlo? Se conserva el progreso.")
             ):
                 return self.import_path(path, replace=True)
             self._warn("No se pudo importar", str(exc))
@@ -442,7 +435,7 @@ class MainWindow(QMainWindow):
             return None
         self.refresh()
         self.select_challenge(slug)
-        self.statusBar().showMessage(f"Reto «{slug}» importado", 6_000)
+        self.statusBar().showMessage(f"Caso «{slug}» importado", 6_000)
         return slug
 
     # ================================================================ utilidades
@@ -453,8 +446,8 @@ class MainWindow(QMainWindow):
         QMessageBox.about(
             self,
             "Acerca de SOC Lab",
-            f"<h3>SOC Lab {__version__}</h3><p>Laboratorio de retos SOC / Blue Team con "
-            "contenedores Podman ligeros.</p><p>Python · PySide6 · peewee · SQLite</p>",
+            f"<h3>SOC Lab {__version__}</h3><p>Laboratorio de casos SOC y Blue Team con "
+            "entornos Podman ligeros.</p><p>Python · PySide6 · peewee · SQLite</p>",
         )
 
     def _ask(self, title: str, text: str) -> bool:

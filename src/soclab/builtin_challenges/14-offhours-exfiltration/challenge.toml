@@ -18,9 +18,9 @@ Tenemos tres días de NetFlow. La red interna es `10.0.0.0/8` y el horario labor
 
 Identifica el host interno que envió más bytes hacia IPs externas fuera del horario laboral.
 
-## Artefactos
+## Evidencias
 
-Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+En el entorno de análisis, dentro de `/challenge`, o con el botón *Abrir carpeta de evidencias*:
 
 - `netflow.csv`
 

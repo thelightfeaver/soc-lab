@@ -18,9 +18,9 @@ Un empleado reportó un correo que dice venir de *Banco Andino*. El remitente vi
 
 Siguiendo la cadena de cabeceras `Received`, identifica la IP del equipo que originó el envío (el primer salto, no los servidores intermedios).
 
-## Artefactos
+## Evidencias
 
-Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+En el entorno de análisis, dentro de `/challenge`, o con el botón *Abrir carpeta de evidencias*:
 
 - `correo_sospechoso.eml`
 

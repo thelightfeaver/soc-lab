@@ -18,9 +18,9 @@ Sospechamos que alguien con privilegios en `web01` editó `/var/log/auth.log` pa
 
 Descubre la cuenta backdoor creada y su UID.
 
-## Artefactos
+## Evidencias
 
-Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+En el entorno de análisis, dentro de `/challenge`, o con el botón *Abrir carpeta de evidencias*:
 
 - `auth.log (copia local de web01)`
 - `syslog_central.log (RFC 5424)`

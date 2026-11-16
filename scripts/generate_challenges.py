@@ -80,8 +80,8 @@ def desc(escenario: str, objetivo: str, artefactos: list[str], formato: str) -> 
     items = "\n".join(f"- `{a}`" for a in artefactos)
     return (
         f"## Escenario\n\n{escenario}\n\n## Objetivo\n\n{objetivo}\n\n"
-        f"## Artefactos\n\nDentro del contenedor en `/challenge` (o con el botón "
-        f"*Abrir artefactos*):\n\n{items}\n\n## Formato de la flag\n\n`{formato}`\n"
+        f"## Evidencias\n\nEn el entorno de análisis, dentro de `/challenge`, o con el botón "
+        f"*Abrir carpeta de evidencias*:\n\n{items}\n\n## Formato de la flag\n\n`{formato}`\n"
     )
 
 

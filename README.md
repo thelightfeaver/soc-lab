@@ -8,7 +8,7 @@
 Laboratorio de **analista SOC / Blue Team** con **20 retos** de dificultad creciente
 (Fácil → Experto). Cada reto se analiza en un **contenedor Podman liviano, sin red y de
 solo lectura**, y se completa enviando una **flag `SOC{...}`** desde una interfaz de
-escritorio hecha con **PySide6**.
+escritorio hecha con **PySide6** con estilo de expediente forense.
 
 | Dificultad | Retos | Puntos c/u |
 |---|---|---|
@@ -34,13 +34,16 @@ uv sync
 uv run soclab
 ```
 
-1. Elige un reto de la lista (filtra por dificultad, categoría o estado).
-2. Pulsa **▶ Iniciar contenedor** y copia el comando `podman exec -it soclab-<reto> bash -l`
-   en una terminal. Los artefactos están en `/challenge`.
-3. Analiza, encuentra la respuesta y envía la flag. Las pistas restan puntos.
+1. Elige un caso de la lista (filtra por dificultad, categoría o estado).
+2. Pulsa **Iniciar entorno de análisis** y copia el comando `podman exec -it soclab-<caso> bash -l`
+   en una terminal. Las evidencias están en `/challenge`.
+3. Analiza, escribe tu conclusión como flag y pulsa **Cerrar caso**. Las pistas restan puntos.
 
-> ¿Sin Podman? Usa **📂 Abrir artefactos** y analiza los archivos con tus propias
+> ¿Sin Podman? Usa **Abrir carpeta de evidencias** y analiza los archivos con tus propias
 > herramientas: la flag se valida igual.
+
+La interfaz usa el estilo *expediente forense*: cada reto es un caso con su informe, y al
+resolverlo recibe un sello «Resuelto».
 
 ## Documentación
 
