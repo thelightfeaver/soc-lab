@@ -74,12 +74,16 @@ jobs:
     name: Contenedores (Podman)
     needs: quality
     runs-on: ubuntu-latest
+    env:
+      QT_QPA_PLATFORM: offscreen
     steps:
       - uses: actions/checkout@v7
       - uses: astral-sh/setup-uv@v10.3.3
         with:
           enable-cache: true
       - run: podman --version
+      - name: Librerías de sistema para Qt (pytest-qt se carga al iniciar pytest)
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libegl1 libgl1 libxkbcommon0
       - run: uv sync --locked
       - name: Construir imagen base y todos los retos
         run: |
@@ -90,4 +94,4 @@ jobs:
           done
           podman images --filter reference='localhost/soclab*' --format '{{.Repository}} {{.Size}}'
       - name: Ciclo de vida de un contenedor
-        run: uv run pytest -m podman -v -p no:pytestqt
+        run: uv run pytest -m podman -v
