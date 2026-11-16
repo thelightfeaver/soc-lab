@@ -1,0 +1,246 @@
+{"time": "2026-10-14T08:15:00Z", "pid": 4412, "action": "modify", "path": "C:\\Users\\mrojas\\notas.txt"}
+{"time": "2026-10-14T08:19:00Z", "pid": 4412, "action": "modify", "path": "C:\\Users\\mrojas\\notas.txt"}
+{"time": "2026-10-14T08:23:00Z", "pid": 4412, "action": "modify", "path": "C:\\Users\\mrojas\\notas.txt"}
+{"time": "2026-10-14T08:27:00Z", "pid": 4412, "action": "modify", "path": "C:\\Users\\mrojas\\notas.txt"}
+{"time": "2026-10-14T08:31:00Z", "pid": 4412, "action": "modify", "path": "C:\\Users\\mrojas\\notas.txt"}
+{"time": "2026-10-14T09:00:00Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_000.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_000.docx"}
+{"time": "2026-10-14T09:00:50Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_001.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_001.docx"}
+{"time": "2026-10-14T09:01:40Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_002.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_002.docx"}
+{"time": "2026-10-14T09:02:30Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_003.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_003.docx"}
+{"time": "2026-10-14T09:03:20Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_004.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_004.docx"}
+{"time": "2026-10-14T09:04:10Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_005.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_005.docx"}
+{"time": "2026-10-14T09:05:00Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_006.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_006.docx"}
+{"time": "2026-10-14T09:05:50Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_007.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_007.docx"}
+{"time": "2026-10-14T09:06:40Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_008.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_008.docx"}
+{"time": "2026-10-14T09:07:30Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_009.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_009.docx"}
+{"time": "2026-10-14T09:08:20Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_010.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_010.docx"}
+{"time": "2026-10-14T09:09:10Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_011.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_011.docx"}
+{"time": "2026-10-14T09:10:00Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_012.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_012.docx"}
+{"time": "2026-10-14T09:10:50Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_013.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_013.docx"}
+{"time": "2026-10-14T09:11:40Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_014.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_014.docx"}
+{"time": "2026-10-14T09:12:30Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_015.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_015.docx"}
+{"time": "2026-10-14T09:13:20Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_016.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_016.docx"}
+{"time": "2026-10-14T09:14:10Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_017.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_017.docx"}
+{"time": "2026-10-14T09:15:00Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_018.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_018.docx"}
+{"time": "2026-10-14T09:15:50Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_019.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_019.docx"}
+{"time": "2026-10-14T09:16:40Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_020.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_020.docx"}
+{"time": "2026-10-14T09:17:30Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_021.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_021.docx"}
+{"time": "2026-10-14T09:18:20Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_022.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_022.docx"}
+{"time": "2026-10-14T09:19:10Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_023.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_023.docx"}
+{"time": "2026-10-14T09:20:00Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_024.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_024.docx"}
+{"time": "2026-10-14T09:20:50Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_025.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_025.docx"}
+{"time": "2026-10-14T09:21:40Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_026.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_026.docx"}
+{"time": "2026-10-14T09:22:30Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_027.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_027.docx"}
+{"time": "2026-10-14T09:23:20Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_028.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_028.docx"}
+{"time": "2026-10-14T09:24:10Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_029.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_029.docx"}
+{"time": "2026-10-14T09:25:00Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_030.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_030.docx"}
+{"time": "2026-10-14T09:25:50Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_031.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_031.docx"}
+{"time": "2026-10-14T09:26:40Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_032.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_032.docx"}
+{"time": "2026-10-14T09:27:30Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_033.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_033.docx"}
+{"time": "2026-10-14T09:28:20Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_034.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_034.docx"}
+{"time": "2026-10-14T09:29:10Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_035.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_035.docx"}
+{"time": "2026-10-14T09:30:00Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_036.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_036.docx"}
+{"time": "2026-10-14T09:30:00Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_000.bak"}
+{"time": "2026-10-14T09:30:20Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_001.bak"}
+{"time": "2026-10-14T09:30:40Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_002.bak"}
+{"time": "2026-10-14T09:30:50Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_037.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_037.docx"}
+{"time": "2026-10-14T09:31:00Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_003.bak"}
+{"time": "2026-10-14T09:31:20Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_004.bak"}
+{"time": "2026-10-14T09:31:40Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_038.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_038.docx"}
+{"time": "2026-10-14T09:31:40Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_005.bak"}
+{"time": "2026-10-14T09:32:00Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_006.bak"}
+{"time": "2026-10-14T09:32:20Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_007.bak"}
+{"time": "2026-10-14T09:32:30Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_039.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_039.docx"}
+{"time": "2026-10-14T09:32:40Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_008.bak"}
+{"time": "2026-10-14T09:33:00Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_009.bak"}
+{"time": "2026-10-14T09:33:20Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_040.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_040.docx"}
+{"time": "2026-10-14T09:33:20Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_010.bak"}
+{"time": "2026-10-14T09:33:40Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_011.bak"}
+{"time": "2026-10-14T09:34:00Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_012.bak"}
+{"time": "2026-10-14T09:34:10Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_041.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_041.docx"}
+{"time": "2026-10-14T09:34:20Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_013.bak"}
+{"time": "2026-10-14T09:34:40Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_014.bak"}
+{"time": "2026-10-14T09:35:00Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_042.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_042.docx"}
+{"time": "2026-10-14T09:35:00Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_015.bak"}
+{"time": "2026-10-14T09:35:20Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_016.bak"}
+{"time": "2026-10-14T09:35:40Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_017.bak"}
+{"time": "2026-10-14T09:35:50Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_043.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_043.docx"}
+{"time": "2026-10-14T09:36:00Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_018.bak"}
+{"time": "2026-10-14T09:36:20Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_019.bak"}
+{"time": "2026-10-14T09:36:40Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_044.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_044.docx"}
+{"time": "2026-10-14T09:36:40Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_020.bak"}
+{"time": "2026-10-14T09:37:00Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_021.bak"}
+{"time": "2026-10-14T09:37:20Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_022.bak"}
+{"time": "2026-10-14T09:37:30Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_045.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_045.docx"}
+{"time": "2026-10-14T09:37:40Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_023.bak"}
+{"time": "2026-10-14T09:38:00Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_024.bak"}
+{"time": "2026-10-14T09:38:20Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_046.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_046.docx"}
+{"time": "2026-10-14T09:38:20Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_025.bak"}
+{"time": "2026-10-14T09:38:40Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_026.bak"}
+{"time": "2026-10-14T09:39:00Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_027.bak"}
+{"time": "2026-10-14T09:39:10Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_047.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_047.docx"}
+{"time": "2026-10-14T09:39:20Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_028.bak"}
+{"time": "2026-10-14T09:39:40Z", "pid": 5120, "action": "create", "path": "D:\\backup\\set_029.bak"}
+{"time": "2026-10-14T09:40:00Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_048.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_048.docx"}
+{"time": "2026-10-14T09:40:50Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_049.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_049.docx"}
+{"time": "2026-10-14T09:41:40Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_050.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_050.docx"}
+{"time": "2026-10-14T09:42:30Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_051.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_051.docx"}
+{"time": "2026-10-14T09:43:20Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_052.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_052.docx"}
+{"time": "2026-10-14T09:44:10Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_053.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_053.docx"}
+{"time": "2026-10-14T09:45:00Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_054.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_054.docx"}
+{"time": "2026-10-14T09:45:50Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_055.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_055.docx"}
+{"time": "2026-10-14T09:46:40Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_056.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_056.docx"}
+{"time": "2026-10-14T09:47:30Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_057.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_057.docx"}
+{"time": "2026-10-14T09:48:20Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_058.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_058.docx"}
+{"time": "2026-10-14T09:49:10Z", "pid": 3010, "action": "rename", "path": "C:\\Users\\mrojas\\OneDrive\\doc_059.tmp", "new_path": "C:\\Users\\mrojas\\OneDrive\\doc_059.docx"}
+{"time": "2026-10-14T11:03:00Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_000.jpg", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_000.jpg.locked"}
+{"time": "2026-10-14T11:03:02Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_001.xlsx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_001.xlsx.locked"}
+{"time": "2026-10-14T11:03:04Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_002.jpg", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_002.jpg.locked"}
+{"time": "2026-10-14T11:03:06Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_003.pdf", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_003.pdf.locked"}
+{"time": "2026-10-14T11:03:08Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_004.docx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_004.docx.locked"}
+{"time": "2026-10-14T11:03:10Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_005.jpg", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_005.jpg.locked"}
+{"time": "2026-10-14T11:03:12Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_006.jpg", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_006.jpg.locked"}
+{"time": "2026-10-14T11:03:14Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_007.xlsx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_007.xlsx.locked"}
+{"time": "2026-10-14T11:03:16Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_008.xlsx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_008.xlsx.locked"}
+{"time": "2026-10-14T11:03:18Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_009.pdf", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_009.pdf.locked"}
+{"time": "2026-10-14T11:03:20Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_010.jpg", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_010.jpg.locked"}
+{"time": "2026-10-14T11:03:22Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_011.xlsx", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_011.xlsx.locked"}
+{"time": "2026-10-14T11:03:24Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_012.xlsx", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_012.xlsx.locked"}
+{"time": "2026-10-14T11:03:26Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_013.xlsx", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_013.xlsx.locked"}
+{"time": "2026-10-14T11:03:28Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_014.docx", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_014.docx.locked"}
+{"time": "2026-10-14T11:03:30Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_015.docx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_015.docx.locked"}
+{"time": "2026-10-14T11:03:32Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_016.xlsx", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_016.xlsx.locked"}
+{"time": "2026-10-14T11:03:34Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_017.xlsx", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_017.xlsx.locked"}
+{"time": "2026-10-14T11:03:36Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_018.pdf", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_018.pdf.locked"}
+{"time": "2026-10-14T11:03:38Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_019.jpg", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_019.jpg.locked"}
+{"time": "2026-10-14T11:03:40Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_020.xlsx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_020.xlsx.locked"}
+{"time": "2026-10-14T11:03:42Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_021.jpg", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_021.jpg.locked"}
+{"time": "2026-10-14T11:03:44Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_022.jpg", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_022.jpg.locked"}
+{"time": "2026-10-14T11:03:46Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_023.docx", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_023.docx.locked"}
+{"time": "2026-10-14T11:03:48Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_024.pdf", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_024.pdf.locked"}
+{"time": "2026-10-14T11:03:50Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_025.docx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_025.docx.locked"}
+{"time": "2026-10-14T11:03:52Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_026.xlsx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_026.xlsx.locked"}
+{"time": "2026-10-14T11:03:54Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_027.docx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_027.docx.locked"}
+{"time": "2026-10-14T11:03:56Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_028.docx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_028.docx.locked"}
+{"time": "2026-10-14T11:03:58Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_029.jpg", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_029.jpg.locked"}
+{"time": "2026-10-14T11:04:00Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_030.xlsx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_030.xlsx.locked"}
+{"time": "2026-10-14T11:04:02Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_031.docx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_031.docx.locked"}
+{"time": "2026-10-14T11:04:04Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_032.xlsx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_032.xlsx.locked"}
+{"time": "2026-10-14T11:04:06Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_033.docx", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_033.docx.locked"}
+{"time": "2026-10-14T11:04:08Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_034.jpg", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_034.jpg.locked"}
+{"time": "2026-10-14T11:04:10Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_035.pdf", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_035.pdf.locked"}
+{"time": "2026-10-14T11:04:12Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_036.xlsx", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_036.xlsx.locked"}
+{"time": "2026-10-14T11:04:14Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_037.pdf", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_037.pdf.locked"}
+{"time": "2026-10-14T11:04:16Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_038.docx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_038.docx.locked"}
+{"time": "2026-10-14T11:04:18Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_039.jpg", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_039.jpg.locked"}
+{"time": "2026-10-14T11:04:20Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_040.xlsx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_040.xlsx.locked"}
+{"time": "2026-10-14T11:04:22Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_041.jpg", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_041.jpg.locked"}
+{"time": "2026-10-14T11:04:24Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_042.pdf", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_042.pdf.locked"}
+{"time": "2026-10-14T11:04:26Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_043.docx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_043.docx.locked"}
+{"time": "2026-10-14T11:04:28Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_044.pdf", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_044.pdf.locked"}
+{"time": "2026-10-14T11:04:30Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_045.docx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_045.docx.locked"}
+{"time": "2026-10-14T11:04:32Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_046.jpg", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_046.jpg.locked"}
+{"time": "2026-10-14T11:04:34Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_047.jpg", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_047.jpg.locked"}
+{"time": "2026-10-14T11:04:36Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_048.jpg", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_048.jpg.locked"}
+{"time": "2026-10-14T11:04:38Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_049.xlsx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_049.xlsx.locked"}
+{"time": "2026-10-14T11:04:40Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_050.docx", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_050.docx.locked"}
+{"time": "2026-10-14T11:04:42Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_051.pdf", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_051.pdf.locked"}
+{"time": "2026-10-14T11:04:44Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_052.jpg", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_052.jpg.locked"}
+{"time": "2026-10-14T11:04:46Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_053.docx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_053.docx.locked"}
+{"time": "2026-10-14T11:04:48Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_054.xlsx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_054.xlsx.locked"}
+{"time": "2026-10-14T11:04:50Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_055.docx", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_055.docx.locked"}
+{"time": "2026-10-14T11:04:52Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_056.xlsx", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_056.xlsx.locked"}
+{"time": "2026-10-14T11:04:54Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_057.docx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_057.docx.locked"}
+{"time": "2026-10-14T11:04:56Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_058.xlsx", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_058.xlsx.locked"}
+{"time": "2026-10-14T11:04:58Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_059.jpg", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_059.jpg.locked"}
+{"time": "2026-10-14T11:05:00Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_060.xlsx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_060.xlsx.locked"}
+{"time": "2026-10-14T11:05:02Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_061.jpg", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_061.jpg.locked"}
+{"time": "2026-10-14T11:05:04Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_062.jpg", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_062.jpg.locked"}
+{"time": "2026-10-14T11:05:06Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_063.docx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_063.docx.locked"}
+{"time": "2026-10-14T11:05:08Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_064.pdf", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_064.pdf.locked"}
+{"time": "2026-10-14T11:05:10Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_065.docx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_065.docx.locked"}
+{"time": "2026-10-14T11:05:12Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_066.xlsx", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_066.xlsx.locked"}
+{"time": "2026-10-14T11:05:14Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_067.pdf", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_067.pdf.locked"}
+{"time": "2026-10-14T11:05:16Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_068.pdf", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_068.pdf.locked"}
+{"time": "2026-10-14T11:05:18Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_069.pdf", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_069.pdf.locked"}
+{"time": "2026-10-14T11:05:20Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_070.docx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_070.docx.locked"}
+{"time": "2026-10-14T11:05:22Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_071.xlsx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_071.xlsx.locked"}
+{"time": "2026-10-14T11:05:24Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_072.pdf", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_072.pdf.locked"}
+{"time": "2026-10-14T11:05:26Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_073.pdf", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_073.pdf.locked"}
+{"time": "2026-10-14T11:05:28Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_074.pdf", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_074.pdf.locked"}
+{"time": "2026-10-14T11:05:30Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_075.docx", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_075.docx.locked"}
+{"time": "2026-10-14T11:05:32Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_076.pdf", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_076.pdf.locked"}
+{"time": "2026-10-14T11:05:34Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_077.xlsx", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_077.xlsx.locked"}
+{"time": "2026-10-14T11:05:36Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_078.pdf", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_078.pdf.locked"}
+{"time": "2026-10-14T11:05:38Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_079.jpg", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_079.jpg.locked"}
+{"time": "2026-10-14T11:05:40Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_080.xlsx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_080.xlsx.locked"}
+{"time": "2026-10-14T11:05:42Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_081.pdf", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_081.pdf.locked"}
+{"time": "2026-10-14T11:05:44Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_082.jpg", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_082.jpg.locked"}
+{"time": "2026-10-14T11:05:46Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_083.xlsx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_083.xlsx.locked"}
+{"time": "2026-10-14T11:05:48Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_084.jpg", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_084.jpg.locked"}
+{"time": "2026-10-14T11:05:50Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_085.jpg", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_085.jpg.locked"}
+{"time": "2026-10-14T11:05:52Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_086.xlsx", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_086.xlsx.locked"}
+{"time": "2026-10-14T11:05:54Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_087.docx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_087.docx.locked"}
+{"time": "2026-10-14T11:05:56Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_088.docx", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_088.docx.locked"}
+{"time": "2026-10-14T11:05:58Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_089.pdf", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_089.pdf.locked"}
+{"time": "2026-10-14T11:06:00Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_090.pdf", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_090.pdf.locked"}
+{"time": "2026-10-14T11:06:02Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_091.xlsx", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_091.xlsx.locked"}
+{"time": "2026-10-14T11:06:04Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_092.docx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_092.docx.locked"}
+{"time": "2026-10-14T11:06:06Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_093.docx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_093.docx.locked"}
+{"time": "2026-10-14T11:06:08Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_094.jpg", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_094.jpg.locked"}
+{"time": "2026-10-14T11:06:10Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_095.pdf", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_095.pdf.locked"}
+{"time": "2026-10-14T11:06:12Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_096.xlsx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_096.xlsx.locked"}
+{"time": "2026-10-14T11:06:14Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_097.jpg", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_097.jpg.locked"}
+{"time": "2026-10-14T11:06:16Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_098.jpg", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_098.jpg.locked"}
+{"time": "2026-10-14T11:06:18Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_099.xlsx", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_099.xlsx.locked"}
+{"time": "2026-10-14T11:06:20Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_100.xlsx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_100.xlsx.locked"}
+{"time": "2026-10-14T11:06:22Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_101.jpg", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_101.jpg.locked"}
+{"time": "2026-10-14T11:06:24Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_102.jpg", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_102.jpg.locked"}
+{"time": "2026-10-14T11:06:26Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_103.jpg", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_103.jpg.locked"}
+{"time": "2026-10-14T11:06:28Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_104.docx", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_104.docx.locked"}
+{"time": "2026-10-14T11:06:30Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_105.pdf", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_105.pdf.locked"}
+{"time": "2026-10-14T11:06:32Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_106.docx", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_106.docx.locked"}
+{"time": "2026-10-14T11:06:34Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_107.pdf", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_107.pdf.locked"}
+{"time": "2026-10-14T11:06:36Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_108.jpg", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_108.jpg.locked"}
+{"time": "2026-10-14T11:06:38Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_109.xlsx", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_109.xlsx.locked"}
+{"time": "2026-10-14T11:06:40Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_110.xlsx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_110.xlsx.locked"}
+{"time": "2026-10-14T11:06:42Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_111.jpg", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_111.jpg.locked"}
+{"time": "2026-10-14T11:06:44Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_112.pdf", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_112.pdf.locked"}
+{"time": "2026-10-14T11:06:46Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_113.xlsx", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_113.xlsx.locked"}
+{"time": "2026-10-14T11:06:48Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_114.jpg", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_114.jpg.locked"}
+{"time": "2026-10-14T11:06:50Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_115.docx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_115.docx.locked"}
+{"time": "2026-10-14T11:06:52Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_116.docx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_116.docx.locked"}
+{"time": "2026-10-14T11:06:54Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_117.jpg", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_117.jpg.locked"}
+{"time": "2026-10-14T11:06:56Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_118.jpg", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_118.jpg.locked"}
+{"time": "2026-10-14T11:06:58Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_119.jpg", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_119.jpg.locked"}
+{"time": "2026-10-14T11:07:00Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_120.pdf", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_120.pdf.locked"}
+{"time": "2026-10-14T11:07:02Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_121.xlsx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_121.xlsx.locked"}
+{"time": "2026-10-14T11:07:04Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_122.pdf", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_122.pdf.locked"}
+{"time": "2026-10-14T11:07:06Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_123.xlsx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_123.xlsx.locked"}
+{"time": "2026-10-14T11:07:08Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_124.docx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_124.docx.locked"}
+{"time": "2026-10-14T11:07:10Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_125.jpg", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_125.jpg.locked"}
+{"time": "2026-10-14T11:07:12Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_126.pdf", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_126.pdf.locked"}
+{"time": "2026-10-14T11:07:14Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_127.jpg", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_127.jpg.locked"}
+{"time": "2026-10-14T11:07:16Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_128.pdf", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_128.pdf.locked"}
+{"time": "2026-10-14T11:07:18Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_129.docx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_129.docx.locked"}
+{"time": "2026-10-14T11:07:20Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_130.pdf", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_130.pdf.locked"}
+{"time": "2026-10-14T11:07:22Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_131.docx", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_131.docx.locked"}
+{"time": "2026-10-14T11:07:24Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_132.docx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_132.docx.locked"}
+{"time": "2026-10-14T11:07:26Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_133.xlsx", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_133.xlsx.locked"}
+{"time": "2026-10-14T11:07:28Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_134.pdf", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_134.pdf.locked"}
+{"time": "2026-10-14T11:07:30Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_135.xlsx", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_135.xlsx.locked"}
+{"time": "2026-10-14T11:07:32Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_136.jpg", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_136.jpg.locked"}
+{"time": "2026-10-14T11:07:34Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_137.docx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_137.docx.locked"}
+{"time": "2026-10-14T11:07:36Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_138.jpg", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_138.jpg.locked"}
+{"time": "2026-10-14T11:07:38Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_139.xlsx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_139.xlsx.locked"}
+{"time": "2026-10-14T11:07:40Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_140.jpg", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_140.jpg.locked"}
+{"time": "2026-10-14T11:07:42Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_141.xlsx", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_141.xlsx.locked"}
+{"time": "2026-10-14T11:07:44Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_142.pdf", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_142.pdf.locked"}
+{"time": "2026-10-14T11:07:46Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_143.xlsx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_143.xlsx.locked"}
+{"time": "2026-10-14T11:07:48Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Desktop\\archivo_144.xlsx", "new_path": "C:\\Users\\mrojas\\Desktop\\archivo_144.xlsx.locked"}
+{"time": "2026-10-14T11:07:50Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_145.docx", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_145.docx.locked"}
+{"time": "2026-10-14T11:07:52Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Documents\\archivo_146.jpg", "new_path": "C:\\Users\\mrojas\\Documents\\archivo_146.jpg.locked"}
+{"time": "2026-10-14T11:07:54Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_147.xlsx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_147.xlsx.locked"}
+{"time": "2026-10-14T11:07:56Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Pictures\\archivo_148.xlsx", "new_path": "C:\\Users\\mrojas\\Pictures\\archivo_148.xlsx.locked"}
+{"time": "2026-10-14T11:07:58Z", "pid": 4412, "action": "rename", "path": "C:\\Users\\mrojas\\Downloads\\archivo_149.docx", "new_path": "C:\\Users\\mrojas\\Downloads\\archivo_149.docx.locked"}
+{"time": "2026-10-14T11:08:40Z", "pid": 4412, "action": "create", "path": "C:\\Users\\mrojas\\Desktop\\README_RECUPERAR.txt"}

@@ -1,0 +1,43 @@
+schema_version = 1
+slug = "19-multi-stage-incident"
+title = "Incidente multietapa"
+category = "Respuesta a incidentes"
+difficulty = "experto"
+points = 500
+author = "SOC Lab"
+summary = "Sigue el ataque desde el correo hasta el equipo exacto que descargó la segunda etapa."
+flag_format = "SOC{HOSTNAME}"
+flag_hash = "scrypt$16384$8$1$8f1c77389d1d392dae94915b2eef8720$1eea142f343c1252c6545be72663669e4dab72bf15e997dbae6ed1be6d58a31b"
+case_sensitive = false
+description = '''
+## Escenario
+
+RRHH recibió una 'factura' con un adjunto HTA. Alguien lo abrió. Tienes el correo, los logs del proxy y los logs del DHCP (las IPs cambian de equipo).
+
+## Objetivo
+
+Determina el **hostname** del equipo que descargó con éxito la segunda etapa del ataque.
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `correo_factura.eml`
+- `proxy.log`
+- `dhcp.log`
+
+## Formato de la flag
+
+`SOC{HOSTNAME}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "El adjunto está en Base64 y dentro hay otra cadena Base64... invertida."
+cost = 50
+
+[[hints]]
+text = "Con la URL, busca en el proxy la descarga 200 y luego qué equipo tenía esa IP en ese momento."
+cost = 100

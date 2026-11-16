@@ -1,0 +1,24 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v10
+      - run: uv build
+      - name: Publicar release en GitHub
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          uv run --with commitizen cz changelog "${GITHUB_REF_NAME}" --dry-run > notes.md || echo "Release ${GITHUB_REF_NAME}" > notes.md
+          gh release create "${GITHUB_REF_NAME}" dist/* --notes-file notes.md

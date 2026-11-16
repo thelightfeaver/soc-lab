@@ -1,0 +1,41 @@
+schema_version = 1
+slug = "14-offhours-exfiltration"
+title = "Exfiltración fuera de horario"
+category = "Red"
+difficulty = "dificil"
+points = 300
+author = "SOC Lab"
+summary = "Encuentra el host que sacó más datos a Internet fuera del horario laboral."
+flag_format = "SOC{IP}"
+flag_hash = "scrypt$16384$8$1$06a71174ba43ed3cfb5ec24aca9b6868$9d3c0082537e1632eab6a33d8e0295d6b1954a4469a755ecff20a3ede52b2c8b"
+case_sensitive = false
+description = '''
+## Escenario
+
+Tenemos tres días de NetFlow. La red interna es `10.0.0.0/8` y el horario laboral es de 07:00 a 20:00 (UTC). Hay backups enormes, pero son legítimos o internos.
+
+## Objetivo
+
+Identifica el host interno que envió más bytes hacia IPs externas fuera del horario laboral.
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `netflow.csv`
+
+## Formato de la flag
+
+`SOC{IP}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "Filtra: hora < 7 o hora >= 20, y destino fuera de 10.0.0.0/8."
+cost = 30
+
+[[hints]]
+text = "Suma bytes por src_ip y ordena de mayor a menor (awk o Python)."
+cost = 60

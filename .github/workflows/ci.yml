@@ -1,0 +1,93 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PYTHONUTF8: "1"
+  UV_PYTHON: "3.14"
+
+jobs:
+  quality:
+    name: Calidad (ruff, prek, commitizen)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v10
+        with:
+          enable-cache: true
+      - run: uv sync --locked
+      - run: uv run ruff check --output-format=github .
+      - run: uv run ruff format --check .
+      - run: uv run prek run --all-files --show-diff-on-failure
+      - name: Validar mensajes de commit (Conventional Commits)
+        if: github.event_name == 'pull_request'
+        run: uv run cz check --rev-range "origin/${{ github.base_ref }}..HEAD"
+
+  test:
+    name: Tests (${{ matrix.os }})
+    needs: quality
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      QT_QPA_PLATFORM: offscreen
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10
+        with:
+          enable-cache: true
+      - name: Librerías de sistema para Qt (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libegl1 libgl1 libxkbcommon0 libfontconfig1 libdbus-1-3 libglib2.0-0
+      - run: uv sync --locked
+      - name: Validar manifiestos de retos
+        run: uv run soclab validate src/soclab/builtin_challenges
+      - name: Tests + cobertura
+        run: uv run pytest --cov --cov-report=term --cov-report=xml
+      - name: Construir paquete
+        run: uv build
+      - uses: actions/upload-artifact@v7
+        if: matrix.os == 'ubuntu-latest'
+        with:
+          name: dist
+          path: dist/
+
+  podman:
+    name: Contenedores (Podman)
+    needs: quality
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10
+        with:
+          enable-cache: true
+      - run: podman --version
+      - run: uv sync --locked
+      - name: Construir imagen base y todos los retos
+        run: |
+          podman build -t localhost/soclab-base:1 src/soclab/containers/base
+          for dir in src/soclab/builtin_challenges/*/; do
+            slug=$(basename "$dir")
+            podman build -q -t "localhost/soclab/$slug:latest" "$dir"
+          done
+          podman images --filter reference='localhost/soclab*' --format '{{.Repository}} {{.Size}}'
+      - name: Ciclo de vida de un contenedor
+        run: uv run pytest -m podman -v

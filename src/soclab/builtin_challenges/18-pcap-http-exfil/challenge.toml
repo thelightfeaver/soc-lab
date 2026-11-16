@@ -1,0 +1,42 @@
+schema_version = 1
+slug = "18-pcap-http-exfil"
+title = "Exfiltración HTTP en PCAP"
+category = "Forense de red"
+difficulty = "experto"
+points = 500
+author = "SOC Lab"
+summary = "Reensambla un flujo TCP y extrae el archivo comprimido que se exfiltró."
+flag_format = "SOC{...}"
+flag_hash = "scrypt$16384$8$1$565fea01086b441f27c178934e63af49$e05f6c2510caeccca87b500097f1d98844e2737d8ce99e1393ff5adc827ac8ee"
+case_sensitive = false
+description = '''
+## Escenario
+
+El DLP alertó de una subida de datos sensibles a un servicio de intercambio de archivos. Disponemos de la captura de red del equipo.
+
+## Objetivo
+
+Reensambla la petición HTTP de subida, extrae el archivo enviado y encuentra la marca de agua DLP que contiene. Ojo con los segmentos desordenados y retransmitidos.
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `captura.pcap`
+- `notas.txt`
+
+## Formato de la flag
+
+`SOC{...}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "`tcpdump -r captura.pcap -nn 'tcp port 80'` muestra los flujos; el que interesa es el POST."
+cost = 50
+
+[[hints]]
+text = "Ordena los segmentos por número de secuencia, quita duplicados, separa cabeceras del cuerpo (\\r\\n\\r\\n) y descomprime con gzip."
+cost = 100

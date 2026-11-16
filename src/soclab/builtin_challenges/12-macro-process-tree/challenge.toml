@@ -1,0 +1,41 @@
+schema_version = 1
+slug = "12-macro-process-tree"
+title = "Árbol de procesos de una macro"
+category = "Endpoint"
+difficulty = "medio"
+points = 200
+author = "SOC Lab"
+summary = "Reconstruye el árbol de procesos hasta el documento que inició la infección."
+flag_format = "SOC{nombre_documento.ext}"
+flag_hash = "scrypt$16384$8$1$71719859f56e75196a648af0fb16d4bd$2b3d3b1cc0c06c54764d9ba8c3f78da44e374148b0daf986a93c64940f27528f"
+case_sensitive = false
+description = '''
+## Escenario
+
+Sysmon (evento 1) registró un PowerShell oculto descargando código desde Internet en `WS-007`. Necesitamos el vector inicial.
+
+## Objetivo
+
+Sigue la cadena de procesos padre e identifica el nombre del documento de Office que originó la ejecución.
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `sysmon_process_create.jsonl`
+
+## Formato de la flag
+
+`SOC{nombre_documento.ext}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "Empieza por el PowerShell que descarga con `iwr` y sube por ParentProcessId."
+cost = 20
+
+[[hints]]
+text = "`jq 'select(.ProcessId==6120)'` te ayuda a navegar el árbol."
+cost = 40

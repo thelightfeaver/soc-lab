@@ -1,0 +1,42 @@
+schema_version = 1
+slug = "04-ioc-hash-match"
+title = "Coincidencia de IOC"
+category = "Threat Intelligence"
+difficulty = "facil"
+points = 100
+author = "SOC Lab"
+summary = "Cruza el inventario de binarios con un feed de inteligencia de amenazas."
+flag_format = "SOC{nombre_del_archivo.exe}"
+flag_hash = "scrypt$16384$8$1$43f8e9a2923a8261f619cfe985aff9fc$46ab0865ba4881b58300d53232b945bd4e5d3081383facae9eed52d7988f5b13"
+case_sensitive = false
+description = '''
+## Escenario
+
+Recibimos un feed de IOCs de un CERT aliado. El inventario de binarios de una estación sospechosa fue exportado por el EDR.
+
+## Objetivo
+
+Encuentra el binario del inventario cuyo hash aparece en el feed.
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `inventario_binarios.csv`
+- `feed_iocs.csv`
+
+## Formato de la flag
+
+`SOC{nombre_del_archivo.exe}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "Extrae solo los indicadores de tipo sha256 del feed."
+cost = 10
+
+[[hints]]
+text = "Ojo: el feed usa hexadecimal en MAYÚSCULAS; normaliza antes de comparar."
+cost = 20

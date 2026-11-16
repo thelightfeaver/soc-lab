@@ -1,0 +1,15 @@
+# Imagen base compartida por todos los retos (~60 MB). Cada reto solo añade
+# una capa con sus artefactos, por lo que el laboratorio completo es liviano.
+FROM docker.io/library/alpine:3.22
+
+RUN apk add --no-cache bash coreutils file gawk grep jq less python3 tcpdump xxd \
+    && adduser -D -u 1000 -s /bin/bash analyst \
+    && printf '%s\n' \
+       'echo "SOC Lab - artefactos en /challenge (solo lectura). Escribe en /tmp."' \
+       'cd /challenge' > /etc/profile.d/soclab.sh
+
+ENV PS1='\[\e[36m\]analyst@\h\[\e[0m\]:\w$ ' \
+    ENV=/etc/profile.d/soclab.sh
+WORKDIR /challenge
+USER analyst
+CMD ["tail", "-f", "/dev/null"]

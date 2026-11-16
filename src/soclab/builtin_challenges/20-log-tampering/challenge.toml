@@ -1,0 +1,42 @@
+schema_version = 1
+slug = "20-log-tampering"
+title = "Manipulación de logs"
+category = "Linux Forense"
+difficulty = "experto"
+points = 500
+author = "SOC Lab"
+summary = "Compara el log local con el syslog central para descubrir lo que borró el atacante."
+flag_format = "SOC{usuario:uid}"
+flag_hash = "scrypt$16384$8$1$f7d05e0e2d55e6acbf51e1ea87b76a18$2274ca4303ee0bf12bab570da8aeb2f4900624cc13585f6247d1f058bb7f75f4"
+case_sensitive = false
+description = '''
+## Escenario
+
+Sospechamos que alguien con privilegios en `web01` editó `/var/log/auth.log` para ocultar su rastro. Por suerte, los eventos también se envían a un servidor syslog central (en otro formato).
+
+## Objetivo
+
+Descubre la cuenta backdoor creada y su UID.
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `auth.log (copia local de web01)`
+- `syslog_central.log (RFC 5424)`
+
+## Formato de la flag
+
+`SOC{usuario:uid}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "Los formatos de fecha difieren: normaliza ambos logs a 'HH:MM:SS mensaje' antes de comparar."
+cost = 50
+
+[[hints]]
+text = "`comm -13 local_normalizado central_normalizado` muestra lo que solo está en el central."
+cost = 100

@@ -1,0 +1,265 @@
+<86>1 2026-10-14T00:00:20.000+00:00 web01 sshd[4197]: Accepted publickey for mrojas from 10.0.0.11 port 52586 ssh2
+<86>1 2026-10-14T00:03:31.000+00:00 web01 CRON[3492]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T00:04:40.000+00:00 web01 sshd[3878]: Accepted publickey for mrojas from 10.0.0.11 port 60439 ssh2
+<86>1 2026-10-14T00:05:50.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T00:17:51.000+00:00 web01 CRON[3369]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T00:22:23.000+00:00 web01 sshd[3434]: Accepted publickey for mrojas from 10.0.0.35 port 64515 ssh2
+<86>1 2026-10-14T00:38:51.000+00:00 web01 sshd[4078]: Accepted publickey for mrojas from 10.0.0.44 port 60082 ssh2
+<86>1 2026-10-14T00:39:12.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T00:42:52.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T00:50:01.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T00:51:47.000+00:00 web01 sshd[3235]: Accepted publickey for mrojas from 10.0.0.19 port 46710 ssh2
+<86>1 2026-10-14T00:54:23.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T00:59:50.000+00:00 web01 CRON[3704]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T01:07:03.000+00:00 web01 CRON[3807]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T01:12:10.000+00:00 web01 sshd[3475]: Accepted publickey for ops from 10.0.0.27 port 47025 ssh2
+<86>1 2026-10-14T01:17:04.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T01:19:52.000+00:00 web01 CRON[3412]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T01:20:29.000+00:00 web01 CRON[3685]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T01:23:29.000+00:00 web01 sshd[4111]: Accepted publickey for mrojas from 10.0.0.16 port 41234 ssh2
+<86>1 2026-10-14T01:25:23.000+00:00 web01 CRON[3893]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T01:43:52.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T01:45:38.000+00:00 web01 sshd[3462]: Accepted publickey for ops from 10.0.0.34 port 59845 ssh2
+<86>1 2026-10-14T01:51:56.000+00:00 web01 CRON[4137]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T01:57:32.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T02:06:04.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T02:06:06.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T02:15:21.000+00:00 web01 CRON[3701]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T02:18:06.000+00:00 web01 CRON[3176]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T02:30:06.000+00:00 web01 CRON[3123]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T02:37:07.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T02:51:53.000+00:00 web01 sshd[3654]: Accepted publickey for mrojas from 10.0.0.15 port 61314 ssh2
+<86>1 2026-10-14T02:52:28.000+00:00 web01 CRON[3197]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T03:02:55.000+00:00 web01 CRON[3016]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T03:09:53.000+00:00 web01 CRON[4175]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T03:10:30.000+00:00 web01 sshd[3428]: Accepted publickey for deploy from 10.0.0.17 port 51836 ssh2
+<86>1 2026-10-14T03:15:42.000+00:00 web01 sshd[3737]: Accepted publickey for deploy from 10.0.0.58 port 50531 ssh2
+<86>1 2026-10-14T03:17:24.000+00:00 web01 sshd[3913]: Accepted publickey for mrojas from 10.0.0.58 port 49268 ssh2
+<86>1 2026-10-14T03:33:45.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T03:37:58.000+00:00 web01 sshd[4179]: Accepted publickey for mrojas from 10.0.0.47 port 47543 ssh2
+<86>1 2026-10-14T03:39:15.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T03:40:00.000+00:00 web01 sshd[4101]: Accepted password for deploy from 203.0.113.31 port 40112 ssh2
+<86>1 2026-10-14T03:40:50.000+00:00 web01 sudo: deploy : TTY=pts/1 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/sbin/useradd -o -u 0 -g 0 -M -d /root -s /bin/bash sysadm
+<86>1 2026-10-14T03:40:51.000+00:00 web01 useradd[4120]: new user: name=sysadm, UID=0, GID=0, home=/root, shell=/bin/bash, from=/dev/pts/1
+<86>1 2026-10-14T03:41:30.000+00:00 web01 sudo: deploy : TTY=pts/1 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/sed -i /sysadm/d /var/log/auth.log
+<86>1 2026-10-14T03:42:42.000+00:00 web01 CRON[3526]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T03:43:21.000+00:00 web01 sshd[3252]: Accepted publickey for ops from 10.0.0.32 port 60712 ssh2
+<86>1 2026-10-14T03:50:45.000+00:00 web01 sshd[3336]: Accepted publickey for ops from 10.0.0.42 port 49920 ssh2
+<86>1 2026-10-14T03:50:57.000+00:00 web01 sshd[3024]: Accepted publickey for mrojas from 10.0.0.19 port 61854 ssh2
+<86>1 2026-10-14T04:01:55.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T04:01:58.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T04:05:58.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T04:13:47.000+00:00 web01 CRON[3771]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T04:16:27.000+00:00 web01 CRON[3662]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T04:21:23.000+00:00 web01 sshd[3072]: Accepted publickey for mrojas from 10.0.0.58 port 43460 ssh2
+<86>1 2026-10-14T04:36:15.000+00:00 web01 CRON[3799]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T04:37:05.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T04:39:05.000+00:00 web01 sshd[4031]: Accepted publickey for mrojas from 10.0.0.28 port 59972 ssh2
+<86>1 2026-10-14T04:43:30.000+00:00 web01 CRON[3364]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T04:50:04.000+00:00 web01 CRON[4040]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T04:51:42.000+00:00 web01 sshd[3347]: Accepted publickey for ops from 10.0.0.12 port 40144 ssh2
+<86>1 2026-10-14T04:54:51.000+00:00 web01 CRON[3863]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T04:56:56.000+00:00 web01 CRON[3068]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T05:03:52.000+00:00 web01 sshd[4070]: Accepted publickey for mrojas from 10.0.0.45 port 43460 ssh2
+<86>1 2026-10-14T05:05:25.000+00:00 web01 CRON[3603]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T05:13:30.000+00:00 web01 sshd[3943]: Accepted publickey for mrojas from 10.0.0.51 port 60286 ssh2
+<86>1 2026-10-14T05:16:55.000+00:00 web01 CRON[3996]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T05:20:30.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T05:28:18.000+00:00 web01 CRON[3497]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T05:38:21.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T05:38:34.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T05:38:58.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T05:41:28.000+00:00 web01 CRON[3106]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T05:41:45.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T05:47:46.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T05:49:23.000+00:00 web01 sshd[3842]: Accepted publickey for ops from 10.0.0.57 port 55178 ssh2
+<86>1 2026-10-14T06:00:43.000+00:00 web01 sshd[4059]: Accepted publickey for mrojas from 10.0.0.17 port 50881 ssh2
+<86>1 2026-10-14T06:05:58.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T06:07:41.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T06:24:30.000+00:00 web01 sshd[4054]: Accepted publickey for ops from 10.0.0.33 port 47912 ssh2
+<86>1 2026-10-14T06:24:47.000+00:00 web01 sshd[3137]: Accepted publickey for mrojas from 10.0.0.48 port 58454 ssh2
+<86>1 2026-10-14T06:25:36.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T06:30:49.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T06:40:14.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T06:40:32.000+00:00 web01 sshd[3622]: Accepted publickey for deploy from 10.0.0.52 port 52615 ssh2
+<86>1 2026-10-14T06:41:57.000+00:00 web01 CRON[4162]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T06:43:45.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T06:44:13.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T07:02:01.000+00:00 web01 CRON[3031]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T07:14:49.000+00:00 web01 sshd[3801]: Accepted publickey for mrojas from 10.0.0.12 port 61990 ssh2
+<86>1 2026-10-14T07:16:08.000+00:00 web01 sshd[3355]: Accepted publickey for ops from 10.0.0.36 port 45424 ssh2
+<86>1 2026-10-14T07:18:38.000+00:00 web01 CRON[3571]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T07:25:08.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T07:27:34.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T07:32:30.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T07:32:56.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T07:33:30.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T07:34:41.000+00:00 web01 sshd[3125]: Accepted publickey for mrojas from 10.0.0.47 port 59268 ssh2
+<86>1 2026-10-14T07:38:57.000+00:00 web01 CRON[3114]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T07:51:11.000+00:00 web01 CRON[3566]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T07:54:26.000+00:00 web01 sshd[3711]: Accepted publickey for ops from 10.0.0.55 port 56966 ssh2
+<86>1 2026-10-14T08:01:09.000+00:00 web01 CRON[3358]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T08:01:51.000+00:00 web01 sshd[3625]: Accepted publickey for deploy from 10.0.0.35 port 63493 ssh2
+<86>1 2026-10-14T08:04:37.000+00:00 web01 sshd[4109]: Accepted publickey for deploy from 10.0.0.11 port 64326 ssh2
+<86>1 2026-10-14T08:09:33.000+00:00 web01 CRON[3309]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T08:10:10.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T08:12:38.000+00:00 web01 CRON[4225]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T08:14:22.000+00:00 web01 sshd[3856]: Accepted publickey for mrojas from 10.0.0.48 port 60052 ssh2
+<86>1 2026-10-14T08:14:45.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T08:15:11.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T08:23:46.000+00:00 web01 CRON[4066]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T08:28:58.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T08:56:41.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T08:59:12.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T09:06:05.000+00:00 web01 sshd[3065]: Accepted publickey for ops from 10.0.0.15 port 48110 ssh2
+<86>1 2026-10-14T09:07:16.000+00:00 web01 sshd[3557]: Accepted publickey for mrojas from 10.0.0.21 port 54350 ssh2
+<86>1 2026-10-14T09:09:37.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T09:16:38.000+00:00 web01 CRON[4266]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T09:24:04.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T09:31:23.000+00:00 web01 CRON[3720]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T09:43:28.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T09:45:01.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T09:45:42.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T09:46:56.000+00:00 web01 CRON[3883]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T09:53:49.000+00:00 web01 CRON[3289]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T10:06:21.000+00:00 web01 sshd[4065]: Accepted publickey for deploy from 10.0.0.37 port 45507 ssh2
+<86>1 2026-10-14T10:10:17.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T10:10:22.000+00:00 web01 sshd[3780]: Accepted publickey for mrojas from 10.0.0.20 port 44921 ssh2
+<86>1 2026-10-14T10:14:46.000+00:00 web01 CRON[3716]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T10:15:23.000+00:00 web01 CRON[3132]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T10:21:33.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T10:31:56.000+00:00 web01 CRON[3766]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T10:35:04.000+00:00 web01 CRON[3339]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T10:35:56.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T10:38:18.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T10:48:54.000+00:00 web01 CRON[4103]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T10:49:23.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T10:50:42.000+00:00 web01 CRON[3155]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T10:51:10.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T10:51:17.000+00:00 web01 CRON[4002]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T11:00:33.000+00:00 web01 CRON[3953]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T11:04:00.000+00:00 web01 useradd[2210]: new user: name=jtorres, UID=1004, GID=1004, home=/home/jtorres, shell=/bin/bash, from=/dev/pts/0
+<86>1 2026-10-14T11:07:51.000+00:00 web01 CRON[4253]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T11:14:47.000+00:00 web01 sshd[4107]: Accepted publickey for mrojas from 10.0.0.42 port 54680 ssh2
+<86>1 2026-10-14T11:28:31.000+00:00 web01 CRON[4251]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T11:31:50.000+00:00 web01 sshd[3058]: Accepted publickey for ops from 10.0.0.37 port 53873 ssh2
+<86>1 2026-10-14T11:36:09.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T11:46:03.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T11:49:55.000+00:00 web01 sshd[3600]: Accepted publickey for mrojas from 10.0.0.47 port 62017 ssh2
+<86>1 2026-10-14T11:51:23.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T11:53:12.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T11:58:03.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T12:06:43.000+00:00 web01 sshd[4256]: Accepted publickey for mrojas from 10.0.0.24 port 43087 ssh2
+<86>1 2026-10-14T12:14:26.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T12:15:31.000+00:00 web01 CRON[3377]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T12:15:49.000+00:00 web01 CRON[4219]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T12:22:16.000+00:00 web01 sshd[3385]: Accepted publickey for mrojas from 10.0.0.41 port 40726 ssh2
+<86>1 2026-10-14T12:29:16.000+00:00 web01 sshd[3279]: Accepted publickey for deploy from 10.0.0.44 port 43170 ssh2
+<86>1 2026-10-14T12:42:19.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T12:42:32.000+00:00 web01 sshd[3503]: Accepted publickey for mrojas from 10.0.0.19 port 48535 ssh2
+<86>1 2026-10-14T12:54:21.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T13:02:40.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T13:02:54.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T13:12:04.000+00:00 web01 sshd[4244]: Accepted publickey for mrojas from 10.0.0.31 port 45975 ssh2
+<86>1 2026-10-14T13:15:13.000+00:00 web01 sshd[3756]: Accepted publickey for mrojas from 10.0.0.13 port 50428 ssh2
+<86>1 2026-10-14T13:18:44.000+00:00 web01 CRON[3185]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T14:01:45.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T14:11:34.000+00:00 web01 CRON[4158]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T14:24:58.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T14:25:34.000+00:00 web01 sshd[4072]: Accepted publickey for deploy from 10.0.0.53 port 64579 ssh2
+<86>1 2026-10-14T14:30:41.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T14:52:06.000+00:00 web01 CRON[3947]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T14:53:12.000+00:00 web01 CRON[3480]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T14:56:49.000+00:00 web01 sshd[3314]: Accepted publickey for deploy from 10.0.0.51 port 47536 ssh2
+<86>1 2026-10-14T14:57:39.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T14:59:14.000+00:00 web01 sshd[3803]: Accepted publickey for deploy from 10.0.0.46 port 40969 ssh2
+<86>1 2026-10-14T15:10:13.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T15:15:10.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T15:15:40.000+00:00 web01 CRON[3904]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T15:16:53.000+00:00 web01 CRON[3865]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T15:26:09.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T15:28:39.000+00:00 web01 CRON[3260]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T15:31:21.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T15:33:36.000+00:00 web01 CRON[3275]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T15:35:16.000+00:00 web01 sshd[3170]: Accepted publickey for mrojas from 10.0.0.60 port 40436 ssh2
+<86>1 2026-10-14T15:49:20.000+00:00 web01 sshd[3518]: Accepted publickey for deploy from 10.0.0.39 port 48717 ssh2
+<86>1 2026-10-14T15:50:36.000+00:00 web01 sshd[3616]: Accepted publickey for deploy from 10.0.0.53 port 50601 ssh2
+<86>1 2026-10-14T15:53:18.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T15:56:26.000+00:00 web01 CRON[3642]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T16:03:31.000+00:00 web01 sshd[3436]: Accepted publickey for mrojas from 10.0.0.15 port 52579 ssh2
+<86>1 2026-10-14T16:06:47.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T16:26:52.000+00:00 web01 sshd[4264]: Accepted publickey for deploy from 10.0.0.23 port 53019 ssh2
+<86>1 2026-10-14T16:27:17.000+00:00 web01 sshd[3215]: Accepted publickey for mrojas from 10.0.0.36 port 57856 ssh2
+<86>1 2026-10-14T16:32:08.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T16:33:32.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T16:42:09.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T16:47:34.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T16:49:27.000+00:00 web01 CRON[3671]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T16:53:25.000+00:00 web01 CRON[3096]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T16:58:31.000+00:00 web01 CRON[3254]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T17:27:46.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T17:27:57.000+00:00 web01 sshd[3089]: Accepted publickey for mrojas from 10.0.0.17 port 60788 ssh2
+<86>1 2026-10-14T17:45:06.000+00:00 web01 CRON[3678]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T18:02:38.000+00:00 web01 sshd[3682]: Accepted publickey for deploy from 10.0.0.19 port 42730 ssh2
+<86>1 2026-10-14T18:11:25.000+00:00 web01 CRON[3639]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T18:13:11.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T18:23:53.000+00:00 web01 CRON[3116]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T18:26:00.000+00:00 web01 CRON[3162]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T18:26:24.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T18:26:41.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T18:27:14.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T18:47:32.000+00:00 web01 sshd[3614]: Accepted publickey for ops from 10.0.0.54 port 55048 ssh2
+<86>1 2026-10-14T18:56:22.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T19:01:47.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T19:08:30.000+00:00 web01 CRON[4023]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T19:20:43.000+00:00 web01 sshd[3613]: Accepted publickey for deploy from 10.0.0.20 port 42816 ssh2
+<86>1 2026-10-14T19:20:55.000+00:00 web01 CRON[3482]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T19:38:37.000+00:00 web01 sshd[4093]: Accepted publickey for ops from 10.0.0.21 port 51239 ssh2
+<86>1 2026-10-14T19:43:36.000+00:00 web01 CRON[3441]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T19:43:56.000+00:00 web01 sshd[3912]: Accepted publickey for deploy from 10.0.0.46 port 63676 ssh2
+<86>1 2026-10-14T19:49:12.000+00:00 web01 CRON[3589]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T19:50:55.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T20:02:23.000+00:00 web01 CRON[3438]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T20:04:30.000+00:00 web01 CRON[3750]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T20:05:34.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T20:08:39.000+00:00 web01 CRON[3035]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T20:15:01.000+00:00 web01 CRON[3885]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T20:15:09.000+00:00 web01 CRON[3990]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T20:18:16.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T20:24:03.000+00:00 web01 CRON[3606]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T20:25:53.000+00:00 web01 sshd[3841]: Accepted publickey for deploy from 10.0.0.30 port 47282 ssh2
+<86>1 2026-10-14T20:40:13.000+00:00 web01 CRON[3522]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T20:44:21.000+00:00 web01 CRON[3245]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T20:51:54.000+00:00 web01 sshd[4234]: Accepted publickey for deploy from 10.0.0.24 port 61332 ssh2
+<86>1 2026-10-14T20:52:53.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T21:10:45.000+00:00 web01 sshd[3793]: Accepted publickey for ops from 10.0.0.23 port 42568 ssh2
+<86>1 2026-10-14T21:16:27.000+00:00 web01 CRON[4211]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T21:18:58.000+00:00 web01 sshd[3939]: Accepted publickey for mrojas from 10.0.0.48 port 62419 ssh2
+<86>1 2026-10-14T21:22:43.000+00:00 web01 CRON[3393]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T21:22:46.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T21:28:47.000+00:00 web01 CRON[4150]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T21:38:07.000+00:00 web01 sshd[3287]: Accepted publickey for mrojas from 10.0.0.18 port 52659 ssh2
+<86>1 2026-10-14T21:45:31.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T21:50:33.000+00:00 web01 CRON[3032]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T21:56:16.000+00:00 web01 CRON[3328]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T22:03:10.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T22:14:33.000+00:00 web01 sshd[3086]: Accepted publickey for ops from 10.0.0.48 port 48193 ssh2
+<86>1 2026-10-14T22:21:46.000+00:00 web01 sshd[3673]: Accepted publickey for deploy from 10.0.0.46 port 47171 ssh2
+<86>1 2026-10-14T22:29:42.000+00:00 web01 CRON[3511]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T22:32:55.000+00:00 web01 sshd[3274]: Accepted publickey for mrojas from 10.0.0.21 port 51270 ssh2
+<86>1 2026-10-14T22:42:24.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T22:44:30.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T22:44:39.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T22:52:30.000+00:00 web01 sudo: mrojas : TTY=pts/0 ; PWD=/home/mrojas ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T22:56:31.000+00:00 web01 sshd[3800]: Accepted publickey for deploy from 10.0.0.39 port 63852 ssh2
+<86>1 2026-10-14T23:01:49.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T23:02:22.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T23:07:08.000+00:00 web01 CRON[3935]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T23:08:16.000+00:00 web01 CRON[3847]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+<86>1 2026-10-14T23:08:28.000+00:00 web01 sshd[3489]: Accepted publickey for mrojas from 10.0.0.55 port 63705 ssh2
+<86>1 2026-10-14T23:09:54.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T23:16:54.000+00:00 web01 sudo: ops : TTY=pts/0 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T23:25:13.000+00:00 web01 sshd[3080]: Accepted publickey for ops from 10.0.0.28 port 51841 ssh2
+<86>1 2026-10-14T23:33:43.000+00:00 web01 sshd[4205]: Accepted publickey for ops from 10.0.0.40 port 47378 ssh2
+<86>1 2026-10-14T23:44:37.000+00:00 web01 sudo: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+<86>1 2026-10-14T23:46:12.000+00:00 web01 sshd[3916]: Accepted publickey for mrojas from 10.0.0.55 port 41531 ssh2

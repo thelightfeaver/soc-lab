@@ -1,0 +1,2 @@
+# rotación diaria
+25 6 * * * root test -x /usr/sbin/logrotate && /usr/sbin/logrotate /etc/logrotate.conf

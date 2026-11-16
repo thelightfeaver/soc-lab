@@ -1,0 +1,2 @@
+Captura tomada en el switch de acceso del puesto 10.0.6.21.
+Herramientas en el contenedor: tcpdump, python3, xxd.

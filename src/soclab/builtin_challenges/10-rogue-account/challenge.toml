@@ -1,0 +1,41 @@
+schema_version = 1
+slug = "10-rogue-account"
+title = "Cuenta creada por el intruso"
+category = "Windows"
+difficulty = "medio"
+points = 200
+author = "SOC Lab"
+summary = "Correlaciona eventos de seguridad por LogonId para hallar la cuenta del atacante."
+flag_format = "SOC{nombre_cuenta}"
+flag_hash = "scrypt$16384$8$1$12e0f795ed8971ef9abbd16de9fcefd5$5ee78200b915ad84392fc51f677f5e3094ba79661803c79f8215f32818cfa0a0"
+case_sensitive = false
+description = '''
+## Escenario
+
+Durante la noche hubo un acceso RDP desde Internet a `SRV-APP01`. El equipo de TI también creó cuentas ese día, así que no basta con buscar el evento 4720.
+
+## Objetivo
+
+Identifica la cuenta creada en la sesión del atacante.
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `security_events.jsonl`
+
+## Formato de la flag
+
+`SOC{nombre_cuenta}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "RDP = LogonType 10. Busca el inicio de sesión exitoso desde una IP pública."
+cost = 20
+
+[[hints]]
+text = "Relaciona TargetLogonId (4624) con SubjectLogonId (4720)."
+cost = 40

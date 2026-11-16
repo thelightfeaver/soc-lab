@@ -1,0 +1,41 @@
+schema_version = 1
+slug = "02-phishing-headers"
+title = "Cabeceras de phishing"
+category = "Phishing"
+difficulty = "facil"
+points = 100
+author = "SOC Lab"
+summary = "Analiza las cabeceras Received para hallar el origen real del correo."
+flag_format = "SOC{IP}"
+flag_hash = "scrypt$16384$8$1$1ee199a6a3693a928a572e9642f7f4c7$567af3e413a4039d333121a501035e5907b8e3d949d09fc0a2ee34f350f578ec"
+case_sensitive = false
+description = '''
+## Escenario
+
+Un empleado reportó un correo que dice venir de *Banco Andino*. El remitente visible parece legítimo, pero el SOC sospecha suplantación.
+
+## Objetivo
+
+Siguiendo la cadena de cabeceras `Received`, identifica la IP del equipo que originó el envío (el primer salto, no los servidores intermedios).
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `correo_sospechoso.eml`
+
+## Formato de la flag
+
+`SOC{IP}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "Las cabeceras Received se leen de abajo hacia arriba."
+cost = 10
+
+[[hints]]
+text = "La última cabecera Received (la más baja) describe el primer salto."
+cost = 20

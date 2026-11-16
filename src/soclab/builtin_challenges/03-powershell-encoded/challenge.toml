@@ -1,0 +1,41 @@
+schema_version = 1
+slug = "03-powershell-encoded"
+title = "PowerShell codificado"
+category = "Endpoint"
+difficulty = "facil"
+points = 100
+author = "SOC Lab"
+summary = "Decodifica un comando PowerShell ofuscado para encontrar el dominio de descarga."
+flag_format = "SOC{dominio}"
+flag_hash = "scrypt$16384$8$1$bb914ae9ae07293a2269b8293bf85213$e8237c9b5ba2df8896636960e37bc11310f2ec8e9985ebd20e8dd9d936906aaa"
+case_sensitive = false
+description = '''
+## Escenario
+
+El EDR exportó eventos de creación de procesos (4688) de varias estaciones. Una de ellas ejecutó PowerShell oculto con un comando codificado.
+
+## Objetivo
+
+Decodifica el comando malicioso y encuentra el dominio desde el que se descarga la siguiente etapa.
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `process_events.jsonl`
+
+## Formato de la flag
+
+`SOC{dominio}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "Busca los parámetros -enc / -EncodedCommand."
+cost = 10
+
+[[hints]]
+text = "PowerShell usa Base64 sobre UTF-16LE: `base64 -d | iconv -f utf-16le` o Python."
+cost = 20

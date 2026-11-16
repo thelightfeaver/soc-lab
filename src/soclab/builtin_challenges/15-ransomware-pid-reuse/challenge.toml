@@ -1,0 +1,42 @@
+schema_version = 1
+slug = "15-ransomware-pid-reuse"
+title = "Ransomware y reutilización de PID"
+category = "Endpoint"
+difficulty = "dificil"
+points = 300
+author = "SOC Lab"
+summary = "Correlaciona eventos de archivos y procesos teniendo en cuenta que los PID se reutilizan."
+flag_format = "SOC{ejecutable.exe}"
+flag_hash = "scrypt$16384$8$1$9968f4802edae209437f752cf99b5fea$90eb287377638043cc2ca46e095c585c4ed3c7395c0f845aaac59b22d80ce13b"
+case_sensitive = false
+description = '''
+## Escenario
+
+La estación de `mrojas` amaneció con archivos `.locked` y una nota de rescate. Tenemos telemetría de archivos y de procesos, pero los eventos de archivos solo indican el PID.
+
+## Objetivo
+
+Identifica el nombre del ejecutable que cifró los archivos. Cuidado: Windows reutiliza los PID.
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `file_events.jsonl`
+- `process_events.jsonl`
+
+## Formato de la flag
+
+`SOC{ejecutable.exe}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "Toma el PID y la hora del primer renombrado a .locked."
+cost = 30
+
+[[hints]]
+text = "Busca el proceso con ese PID que estaba vivo en ese instante (start antes y sin stop)."
+cost = 60

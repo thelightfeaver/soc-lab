@@ -1,0 +1,41 @@
+schema_version = 1
+slug = "05-hidden-admin-panel"
+title = "Panel de administración oculto"
+category = "Web"
+difficulty = "facil"
+points = 100
+author = "SOC Lab"
+summary = "Detecta qué ruta oculta encontró un escáner de directorios."
+flag_format = "SOC{/ruta/completa}"
+flag_hash = "scrypt$16384$8$1$288e9975e8a7c25bebbede089f0c2631$868c51c8ffdd2e4d760c1d177ba32a83c6997a0f1c2d7d704daaf85f03848e99"
+case_sensitive = false
+description = '''
+## Escenario
+
+El servidor web corporativo registró un pico de errores 404 por la tarde. Parece un escaneo automático de directorios que terminó encontrando algo.
+
+## Objetivo
+
+Identifica la ruta exacta que el escáner descubrió (respondió 200) y que luego fue atacada con peticiones POST.
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `access.log`
+
+## Formato de la flag
+
+`SOC{/ruta/completa}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "Filtra por el User-Agent de la herramienta de escaneo."
+cost = 10
+
+[[hints]]
+text = "`awk '$9==200' access.log | grep gobuster`"
+cost = 20

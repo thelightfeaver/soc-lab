@@ -1,0 +1,41 @@
+schema_version = 1
+slug = "07-dns-tunneling"
+title = "Túnel DNS"
+category = "Red"
+difficulty = "medio"
+points = 200
+author = "SOC Lab"
+summary = "Reconstruye datos exfiltrados en subdominios DNS."
+flag_format = "SOC{...}"
+flag_hash = "scrypt$16384$8$1$b6cbb84506999e60bef450e2be839546$c8820959430d2a8018445a2b4f779949463426fddf1743612a4ab22a634fd242"
+case_sensitive = false
+description = '''
+## Escenario
+
+El resolver interno muestra consultas TXT con subdominios largos y aleatorios hacia un dominio externo. Sospechamos exfiltración por túnel DNS.
+
+## Objetivo
+
+Reconstruye la información exfiltrada. La flag está dentro de los datos.
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `dns.log`
+
+## Formato de la flag
+
+`SOC{...}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "Cada consulta lleva <datos_hex>.<n_secuencia>.t.exfil-cdn.org"
+cost = 20
+
+[[hints]]
+text = "Ordena por secuencia, elimina duplicados y decodifica de hexadecimal (`xxd -r -p`)."
+cost = 40

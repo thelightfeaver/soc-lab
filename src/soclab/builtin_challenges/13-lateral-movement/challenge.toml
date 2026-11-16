@@ -1,0 +1,42 @@
+schema_version = 1
+slug = "13-lateral-movement"
+title = "Movimiento lateral"
+category = "Windows"
+difficulty = "dificil"
+points = 300
+author = "SOC Lab"
+summary = "Reconstruye la ruta del atacante entre equipos usando una cuenta de servicio."
+flag_format = "SOC{HOST1>HOST2>HOST3>...}"
+flag_hash = "scrypt$16384$8$1$993196136df4fca9e2ea393a1d05e744$bea54b984a75b26cf0c368423fae0ef4db521f14a14c15c8852979e42233a237"
+case_sensitive = false
+description = '''
+## Escenario
+
+La cuenta de servicio `adm_backup` fue comprometida desde la estación de `lgarcia`. Normalmente esa cuenta solo se usa desde el servidor de backups por las noches.
+
+## Objetivo
+
+Reconstruye la ruta completa del atacante, desde el equipo inicial hasta el último equipo alcanzado, en orden cronológico.
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `logons.jsonl`
+- `activos.csv`
+
+## Formato de la flag
+
+`SOC{HOST1>HOST2>HOST3>...}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "Traduce src_ip a hostname con activos.csv."
+cost = 30
+
+[[hints]]
+text = "Descarta la actividad legítima de adm_backup desde BKP-01."
+cost = 60

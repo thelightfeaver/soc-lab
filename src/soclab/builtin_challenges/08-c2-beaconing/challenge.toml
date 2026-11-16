@@ -1,0 +1,41 @@
+schema_version = 1
+slug = "08-c2-beaconing"
+title = "Beaconing de C2"
+category = "Red"
+difficulty = "medio"
+points = 200
+author = "SOC Lab"
+summary = "Detecta conexiones periódicas hacia un servidor de comando y control."
+flag_format = "SOC{IP:puerto}"
+flag_hash = "scrypt$16384$8$1$85851fb9d6a7b8853d5f4bc737509f90$3ae1d4382704ee8f26553f3459f2b2bd568ed8426b2ad4b60ffa8250c445d2ad"
+case_sensitive = false
+description = '''
+## Escenario
+
+El firewall perimetral exportó tres horas de conexiones salientes. Un implante suele 'llamar a casa' a intervalos regulares con poco tráfico.
+
+## Objetivo
+
+Encuentra el destino (IP:puerto) del beaconing.
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `conexiones.csv`
+
+## Formato de la flag
+
+`SOC{IP:puerto}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "Agrupa por (origen, destino, puerto) y mira cuántas conexiones hay."
+cost = 20
+
+[[hints]]
+text = "Calcula el intervalo entre conexiones consecutivas: el beacon tiene muy poca variación."
+cost = 40

@@ -1,0 +1,31 @@
+Return-Path: <bounce-7731@bancoandino-seguridad.xyz>
+Delivered-To: mrojas@empresa-demo.local
+Received: from mx01.empresa-demo.local (mx01.empresa-demo.local [10.0.1.25])
+	by mbox02.empresa-demo.local with LMTP id 0aF3; Wed, 14 Oct 2026 09:14:03 -0500
+Received: from relay.mailout-servicios.net (relay.mailout-servicios.net [198.51.100.10])
+	by mx01.empresa-demo.local (Postfix) with ESMTPS id 4F2A91C02
+	for <mrojas@empresa-demo.local>; Wed, 14 Oct 2026 09:14:02 -0500
+Received: from [192.0.2.150] (unknown [192.0.2.150])
+	by relay.mailout-servicios.net (Postfix) with ESMTPSA id 9B1C3
+	for <mrojas@empresa-demo.local>; Wed, 14 Oct 2026 14:13:58 +0000
+Authentication-Results: mx01.empresa-demo.local;
+	spf=fail (sender IP is 198.51.100.10) smtp.mailfrom=bancoandino-seguridad.xyz;
+	dkim=none; dmarc=fail action=none header.from=bancoandino.com
+From: "Banco Andino" <notificaciones@bancoandino.com>
+Reply-To: <soporte@bancoandino-seguridad.xyz>
+To: <mrojas@empresa-demo.local>
+Subject: =?UTF-8?Q?[URGENTE]_Verifique_su_cuenta_en_24_horas?=
+Date: Wed, 14 Oct 2026 14:13:57 +0000
+Message-ID: <20261014141357.77A1@bancoandino-seguridad.xyz>
+MIME-Version: 1.0
+X-Mailer: PHPMailer 6.8.0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<html><body>
+<p>Estimado cliente,</p>
+<p>Detectamos actividad inusual. Verifique su identidad en las proximas 24 horas
+o su cuenta sera bloqueada:</p>
+<p><a href="hxxps://bancoandino-seguridad.xyz/login?id=8812">Verificar mi cuenta</a></p>
+<p>Banco Andino - Seguridad</p>
+</body></html>

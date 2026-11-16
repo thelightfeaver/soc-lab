@@ -1,0 +1,41 @@
+schema_version = 1
+slug = "01-ssh-bruteforce"
+title = "Fuerza bruta SSH"
+category = "Análisis de logs"
+difficulty = "facil"
+points = 100
+author = "SOC Lab"
+summary = "Identifica la IP que consiguió entrar tras un ataque de fuerza bruta."
+flag_format = "SOC{IP}"
+flag_hash = "scrypt$16384$8$1$31545a3babc9042a505fb1441d8735ef$6e89b24b58a7a659af7b3bd51466c70ccd0c742e2a57cb48cddbd4fb9bcddd35"
+case_sensitive = false
+description = '''
+## Escenario
+
+El bastión SSH `bastion01` recibió miles de intentos de autenticación durante la madrugada. Varias IPs de Internet probaron contraseñas, pero solo una lo consiguió.
+
+## Objetivo
+
+Encuentra la IP que, tras múltiples fallos, logró autenticarse con éxito.
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `auth.log`
+
+## Formato de la flag
+
+`SOC{IP}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "Compara las líneas 'Failed password' con las 'Accepted password'."
+cost = 10
+
+[[hints]]
+text = "`grep Accepted auth.log` y cruza con `grep Failed auth.log | awk '{print $(NF-3)}' | sort | uniq -c`."
+cost = 20

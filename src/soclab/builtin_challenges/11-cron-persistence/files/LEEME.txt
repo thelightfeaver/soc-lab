@@ -1,0 +1,2 @@
+Copia del sistema de archivos de web01 tomada por el equipo de respuesta.
+Ruta: rootfs/

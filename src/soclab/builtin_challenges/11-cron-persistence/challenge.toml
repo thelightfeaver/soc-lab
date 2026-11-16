@@ -1,0 +1,42 @@
+schema_version = 1
+slug = "11-cron-persistence"
+title = "Persistencia en cron"
+category = "Linux Forense"
+difficulty = "medio"
+points = 200
+author = "SOC Lab"
+summary = "Encuentra el mecanismo de persistencia oculto en un sistema Linux."
+flag_format = "SOC{IP:puerto}"
+flag_hash = "scrypt$16384$8$1$6d5d7e561602c8e24e629f3bdc72b988$d619a8a0f3e9e7bd033e46a0669e98ed48a9c098f8b03e6c848c92120cff7d98"
+case_sensitive = false
+description = '''
+## Escenario
+
+El servidor `web01` vuelve a infectarse aunque se limpie el malware. Se tomó una copia del sistema de archivos para analizarla.
+
+## Objetivo
+
+Encuentra la tarea programada maliciosa y determina el servidor (IP:puerto) desde el que descarga su payload.
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `rootfs/ (copia del sistema de archivos)`
+- `LEEME.txt`
+
+## Formato de la flag
+
+`SOC{IP:puerto}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "Los archivos que empiezan por punto no salen con `ls` normal: usa `ls -la` o `find`."
+cost = 20
+
+[[hints]]
+text = "El comando está en Base64: `echo ... | base64 -d`."
+cost = 40

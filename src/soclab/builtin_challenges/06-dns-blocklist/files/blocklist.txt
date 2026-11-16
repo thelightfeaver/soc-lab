@@ -1,0 +1,28 @@
+# Blocklist interna - dominios maliciosos confirmados
+# Formato: un dominio por línea (incluye subdominios)
+track-761.info
+files-989.top
+track-595.click
+cdn-481.click
+login-439.click
+secure-392.click
+track-588.xyz
+login-752.info
+login-945.top
+login-835.click
+login-425.click
+files-470.xyz
+malwr-cdn.top
+login-959.xyz
+track-259.info
+secure-407.info
+login-16.top
+files-550.xyz
+files-846.info
+track-320.click
+cdn-563.top
+secure-792.click
+track-75.info
+secure-840.top
+files-831.top
+login-98.xyz

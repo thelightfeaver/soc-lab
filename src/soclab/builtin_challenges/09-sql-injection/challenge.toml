@@ -1,0 +1,41 @@
+schema_version = 1
+slug = "09-sql-injection"
+title = "Inyección SQL"
+category = "Web"
+difficulty = "medio"
+points = 200
+author = "SOC Lab"
+summary = "Reconstruye un ataque SQLi y determina qué tabla fue volcada."
+flag_format = "SOC{nombre_tabla}"
+flag_hash = "scrypt$16384$8$1$43f71fd000c709b6d20cd66ab890e28e$cd026a70bc807bc6d5361b2f52fccbc38ee242b67d9d59891c04e9a65bf1efc8"
+case_sensitive = false
+description = '''
+## Escenario
+
+La tienda online reportó lentitud y respuestas inusualmente grandes en `/productos.php`. Los parámetros de las peticiones llegan URL-encoded.
+
+## Objetivo
+
+Determina el nombre de la tabla de negocio cuyos datos se llevó el atacante.
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `access.log`
+
+## Formato de la flag
+
+`SOC{nombre_tabla}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "Decodifica las URLs: `python3 -c 'import sys,urllib.parse;print(urllib.parse.unquote(sys.stdin.read()))'`."
+cost = 20
+
+[[hints]]
+text = "Busca UNION SELECT ... FROM <tabla> con respuesta 200 y tamaño grande."
+cost = 40

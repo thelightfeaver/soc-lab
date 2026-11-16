@@ -1,0 +1,2 @@
+FROM localhost/soclab-base:1
+COPY files/ /challenge/

@@ -1,0 +1,42 @@
+schema_version = 1
+slug = "06-dns-blocklist"
+title = "Consulta a dominio en lista negra"
+category = "Red"
+difficulty = "facil"
+points = 100
+author = "SOC Lab"
+summary = "Cruza los logs DNS con la blocklist para encontrar el equipo comprometido."
+flag_format = "SOC{IP}"
+flag_hash = "scrypt$16384$8$1$7902dd41d9928b2e0ba688d26aed993e$86793fd1dffdca2736046a37dc46600ae8845778094e1d9f37d382ca377b2476"
+case_sensitive = false
+description = '''
+## Escenario
+
+Threat Intel actualizó la blocklist de dominios. Necesitamos saber si algún equipo interno resolvió alguno de ellos durante el día.
+
+## Objetivo
+
+Encuentra la IP interna que consultó un dominio presente en la blocklist (recuerda que la lista bloquea también los subdominios).
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `dns.log`
+- `blocklist.txt`
+
+## Formato de la flag
+
+`SOC{IP}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "Un subdominio de un dominio bloqueado también es malicioso."
+cost = 10
+
+[[hints]]
+text = "Cuidado con dominios parecidos que NO están en la lista."
+cost = 15

@@ -1,0 +1,41 @@
+schema_version = 1
+slug = "17-jwt-alg-none"
+title = "JWT con alg none"
+category = "Web"
+difficulty = "dificil"
+points = 300
+author = "SOC Lab"
+summary = "Detecta un token JWT falsificado y la identidad que suplantó."
+flag_format = "SOC{sub}"
+flag_hash = "scrypt$16384$8$1$ea94e4f31c2a7a35f87203f0e691c398$6428f634ec589321031aca90aee9383bf1b79e3f8141a0e2123142e0bab6565e"
+case_sensitive = false
+description = '''
+## Escenario
+
+La API registró una exportación masiva de datos desde `/api/admin/export`. El registro incluye el token Bearer de cada petición.
+
+## Objetivo
+
+Identifica la identidad (`sub`) con la que el atacante logró exportar los datos usando un token sin firma.
+
+## Artefactos
+
+Dentro del contenedor en `/challenge` (o con el botón *Abrir artefactos*):
+
+- `api_access.log`
+
+## Formato de la flag
+
+`SOC{sub}`
+'''
+
+[container]
+containerfile = "Containerfile"
+
+[[hints]]
+text = "Un JWT son tres partes Base64URL separadas por puntos: cabecera.payload.firma"
+cost = 30
+
+[[hints]]
+text = "Busca tokens cuya cabecera tenga alg 'none' (en cualquier capitalización) y respuesta 200."
+cost = 60
