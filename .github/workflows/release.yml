@@ -50,8 +50,9 @@ jobs:
           args=(--yes)
           if [ "$INCREMENT" != "auto" ]; then args+=(--increment "$INCREMENT"); fi
           uv run --only-group dev cz bump "${args[@]}"
-          echo "tag=v$(uv run --only-group dev cz version --project)" >> "$GITHUB_OUTPUT"
-          git push --follow-tags
+          tag="v$(uv run --only-group dev cz version --project)"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          git push origin HEAD "refs/tags/$tag"
 
   build:
     name: Binario ${{ matrix.label }}

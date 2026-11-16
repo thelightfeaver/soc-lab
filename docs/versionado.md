@@ -40,7 +40,7 @@ Para escribir el mensaje con asistente: `uv run cz commit`.
 
 ```bash
 uv run cz bump              # calcula versión, CHANGELOG, commit y tag
-git push --follow-tags      # el tag dispara el workflow de release
+git push --follow-tags      # sube el commit y el tag anotado; el tag dispara la release
 ```
 
 En ambos casos el workflow [`release.yml`](../.github/workflows/release.yml):
