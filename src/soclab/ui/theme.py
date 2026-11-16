@@ -28,9 +28,11 @@ SUCCESS = "#2F7D4F"
 WARNING = "#9A6B00"
 DANGER = STAMP
 
-SANS = '"IBM Plex Sans", "Segoe UI", "Helvetica Neue", Arial'
-SERIF = '"Source Serif 4", Georgia, "Times New Roman"'
-MONO = '"IBM Plex Mono", Menlo, Consolas'
+# Solo familias empaquetadas en ui/fonts: nombrar fuentes ausentes obliga a Qt a
+# construir alias en cada arranque (aviso "Populating font family aliases").
+SANS = '"IBM Plex Sans"'
+SERIF = '"Source Serif 4"'
+MONO = '"IBM Plex Mono"'
 
 DIFFICULTY_COLORS: dict[Difficulty, str] = {
     Difficulty.FACIL: "#2F7D4F",
