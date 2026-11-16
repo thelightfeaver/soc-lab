@@ -2,7 +2,7 @@
 
 import sys
 
-from PySide6.QtGui import QIcon
+from PySide6.QtGui import QFont, QIcon
 from PySide6.QtWidgets import QApplication, QMessageBox
 
 from soclab import __version__
@@ -36,6 +36,7 @@ def run() -> int:
     app.setOrganizationName("soclab")
     app.setStyle("Fusion")
     load_fonts()
+    app.setFont(QFont("IBM Plex Sans", 10))  # evita buscar la fuente por defecto del SO
     app.setStyleSheet(STYLESHEET)
     app.setWindowIcon(QIcon.fromTheme("security-high"))
     window = build_window()
